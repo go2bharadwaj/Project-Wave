@@ -30,7 +30,7 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
 };
 
 let radius = 200; //radius of the circle
-let t = 30; //variable to keep track of the frame of the ripple animation
+let t = 300; //variable to keep track of the frame of the ripple animation
 let position, speed, force; // variables to define the motion for swipe event interaction
 let direction = 0; //1 for right, -1 for left
 
@@ -56,7 +56,7 @@ function draw(){ // this is a loop that runs forever
 }
 
 function drawRipple() {
-  t+=1; //increases the value we use to track the animation.
+  t+=10; //increases the value we use to track the animation.
   noFill(); //sets the drawing style to have no fill
   strokeWeight(20); //sets the thickness of the ripple
   stroke(255-t); //sets the color of the outline of the ripple to be a shade of grey based on how big the circle is so it fades
