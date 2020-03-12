@@ -1,3 +1,8 @@
+<!-- Welcome to the Soli Playground starter example!
+You can find explanations in the comments, with instructions for how to alter the code yourself.
+This file uses p5.js, a library for making art. You can look up the documentation here: https:p5js.org/reference/ if there are terms you don't recognize.
+If you don't find it there, it's probably just regular Javascript. You can find its documentation here: https://developer.mozilla.org/en-US/docs/Web/JavaScript -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,13 +13,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> <!--p5js version 1-->
     <script>
-
-//Welcome to the example sketch!
-//You can find explanations in the comments, with instructions for how to alter the code yourself.
-//This file uses p5.js, a library for making art. You can look up the documentation here: https://p5js.org/reference/ if there are terms you don't recognize.
-//If you don't find it there, it's probably just regular Javascript. You can find its documentation here: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
-    if(event.type == 'tap') { //if it is a tap event
+      
+window.onSoliEvent = function(event) { // this function will run any time a gesture is detected by Soli
+    if(event.type == 'tap') { //if the gesture is a tap
       console.log("tap detected");
       t = 0; //start the ripple animation
     }
@@ -40,7 +41,7 @@ function setup(){ //When the page loads
   speed = 0;
 }
 
-function draw(){ // this is a loop that runs forever
+function draw(){ // this is an infinite loop
   position += speed; // Move the circle based on its current speed
   speed *= .9; // slow down the ball (by its spring constant)
   speed += (width/2 - position) * .1; // modify the speed of the ball based on how far away it is from the center (imagine a rubber band is attached to it)
