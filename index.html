@@ -1,5 +1,4 @@
-<!-- Welcome to the Soli Playground starter example!
-You can find explanations in the comments, with instructions for how to alter the code yourself.
+<!-- Welcome to the Soli Playground starter example! You can find explanations in the comments, with instructions for how to alter the code yourself.
 This file uses p5.js, a library for making art. You can look up the documentation here: https:p5js.org/reference/ if there are terms you don't recognize.
 If you don't find it there, it's probably just regular Javascript. You can find its documentation here: https://developer.mozilla.org/en-US/docs/Web/JavaScript -->
 
@@ -30,14 +29,14 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
     // }
 };
 
-let radius = 200; //radius of the circle
+let radius = 200; //radius of the white ball
 let animationFrame = 300; //variable to keep track of the frame of the ripple animation
 let position, speed, force; // variables to define the motion for swipe event interaction
 let direction = 0; //1 for right, -1 for left
 
 function setup(){ //When the page loads
-  createCanvas(window.innerWidth,window.innerHeight); //create a canvas for the game to display on.
-  position = width / 2; //put the circle in the middle of the screen
+  createCanvas(window.innerWidth, window.innerHeight);
+  position = width / 2; //start the circle in the middle of the screen
   speed = 0;
 }
 
@@ -48,7 +47,7 @@ function draw(){ // this is an infinite loop
 
   background(0); // This sets the background color. Change the number here to change the background color.
   noStroke(); //This sets the drawing style to not have an outline
-  fill(255,255,255); //This sets the drawing style fill to white. You can change this color to change the color of the circle
+  fill(255, 255, 255); //This sets the drawing style fill to white. You can change this color to change the color of the circle
   ellipse( //draw a circle. You can try rect(x,y,radius); for rectangles, or whole bunch of other shapes listed here under "Shape": https://p5js.org/reference/
      position, // This sets the X coordinate. Here, it's a simple quadratic equation, centered on the screen.
      height / 2, //This sets the y coordinate.
@@ -60,7 +59,7 @@ function drawRipple() {
   animationFrame += 10; //increases the value we use to track the animation.
   noFill(); //sets the drawing style to have no fill
   strokeWeight(20); //sets the thickness of the ripple
-  stroke(255 - t); //sets the color of the outline of the ripple to be a shade of grey based on how big the circle is so it fades
+  stroke(255 - animationFrame); //sets the color of the outline of the ripple to be a shade of grey based on how big the circle is so it fades
   ellipse(position, height / 2, radius + t); //draws the ripple
 }
 
