@@ -17,7 +17,7 @@ If you don't find it there, it's probably just regular Javascript. You can find 
 window.onSoliEvent = function(event) { // this function will run any time a gesture is detected by Soli
     if(event.type == 'tap') { //if the gesture is a tap
       console.log("tap detected");
-      t = 0; //start the ripple animation
+      animationFrame = 0; //start the ripple animation
     }
     // if(event.type == 'swipe') { //if it is a swipe event
     //   if(event.data.direction == '1') {
@@ -31,7 +31,7 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
 };
 
 let radius = 200; //radius of the circle
-let t = 300; //variable to keep track of the frame of the ripple animation
+let animationFrame = 300; //variable to keep track of the frame of the ripple animation
 let position, speed, force; // variables to define the motion for swipe event interaction
 let direction = 0; //1 for right, -1 for left
 
@@ -57,7 +57,7 @@ function draw(){ // this is an infinite loop
 }
 
 function drawRipple() {
-  t+=10; //increases the value we use to track the animation.
+  animationFrame+=10; //increases the value we use to track the animation.
   noFill(); //sets the drawing style to have no fill
   strokeWeight(20); //sets the thickness of the ripple
   stroke(255-t); //sets the color of the outline of the ripple to be a shade of grey based on how big the circle is so it fades
