@@ -13,64 +13,76 @@ If you don't find it there, it's probably just regular Javascript. You can find 
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> <!--p5js version 1-->
     <script>
       
-window.onSoliEvent = function(event) { // this function will run any time a gesture is detected by Soli
-    if(event.type == 'tap') { //if the gesture is a tap
+window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
+    if(event.type == 'tap') {
       console.log("tap detected");
-      animationFrame = 0; //start the ripple animation
+      t = 0; //start the ripple animation
     }
-    // if(event.type == 'swipe') { //if it is a swipe event
-    //   if(event.data.direction == '1') {
-    //     console.log("right swipe detected");
-    //     moveRight();
-    //   } else if (event.data.direction == '5') {
-    //     console.log("left swipe detected");
-    //     moveLeft();
-    //   }
-    // }
+    if(event.type == 'swipe') {
+      // if(event.data.direction == '1') {
+      //  console.log("right swipe detected");
+      //  moveRight();
+      // } else if (event.data.direction == '5') {
+      //  console.log("left swipe detected");
+      //  moveLeft();
+      // }
+    }
+    if(event.type == 'presence') {
+      // do something
+    }
+    if(event.type == 'reach') {
+      // do something
+    }
 };
 
-let radius = 200; //radius of the white ball
-let animationFrame = 300; //variable to keep track of the frame of the ripple animation
+let radius = 200; //radius of the circle
+let t = 300; //variable to keep track of the frame of the ripple animation
 let position, speed, force; // variables to define the motion for swipe event interaction
 let direction = 0; //1 for right, -1 for left
 
 function setup(){ //When the page loads
-  createCanvas(window.innerWidth, window.innerHeight);
-  position = width / 2; //start the circle in the middle of the screen
+  createCanvas(window.innerWidth,window.innerHeight); //create a canvas for the game to display on.
+  position = width/2; //put the circle in the middle of the screen
   speed = 0;
 }
 
-function draw(){ // this is an infinite loop
-  position += speed; // Move the circle based on its current speed
-  speed *= .9; // slow down the ball (by its spring constant)
-  speed += (width / 2 - position) * .1; // modify the speed of the ball based on how far away it is from the center (imagine a rubber band is attached to it)
-
+function draw(){ // this is a loop that runs forever
+  noStroke();
+  fill(255,255,255); //This sets the drawing color to white. You can change this color to change the color of the circle
+  updateLocation();
   background(0); // This sets the background color. Change the number here to change the background color.
-  noStroke(); //This sets the drawing style to not have an outline
-  fill(255, 255, 255); //This sets the drawing style fill to white. You can change this color to change the color of the circle
   ellipse( //draw a circle. You can try rect(x,y,radius); for rectangles, or whole bunch of other shapes listed here under "Shape": https://p5js.org/reference/
      position, // This sets the X coordinate. Here, it's a simple quadratic equation, centered on the screen.
-     height / 2, //This sets the y coordinate.
+     height/2, //This sets the y coordinate.
      radius); //this sets the size of the ball
   drawRipple();
 }
 
-function drawRipple() {
-  animationFrame += 10; //increases the value we use to track the animation.
-  noFill(); //sets the drawing style to have no fill
-  strokeWeight(20); //sets the thickness of the ripple
-  stroke(255 - animationFrame); //sets the color of the outline of the ripple to be a shade of grey based on how big the circle is so it fades
-  ellipse(position, height / 2, radius + t); //draws the ripple
+function updateLocation() {
+  position += speed; // Move the circle based on its current speed
+  speed *= .9; // slow down the ball (by its spring constant)
+  speed += (width/2 - position) * .1; // modify the speed of the ball based on how far away it is from the center (imagine a rubber band is attached to it)
 }
 
-function moveRight() { //for responding to a right swipe
+function drawRipple() {
+  t+=10;
+  noFill();
+  strokeWeight(20);
+  stroke(255-t);
+  ellipse(position, height/2, radius+t);
+}
+
+function moveRight() {
   speed = 30; //gives the circle velocity towards the right
 }
 
-function moveLeft() { //for responding to a left swipe
+function moveLeft() {
   speed = -30; //gives the circle velocity towards the left
 }
-
+   
+  //This detects if the prototype is opened in Soli Sandbox, and sends an alert to the user that soli functionality will not work in other apps/browswe
+  if(!navigator.userAgent.includes("Soli Sandbox")){ alert("This prototype needs to be opened in Soli Sandbox in order to receive Soli Events. Soli functionality will not work.");} else {console.log("Soli Sandbox Detected");}
+      
 //This defines all of p5.js' tools so that glitch recognizes them
 /*global abs,angleMode,append,background,beginShape,bezier,box,camera,ceil,CENTER,color,cone,cos,createCanvas,createCanvas,createGraphics,curveVertex,cylinder,DEGREES,displayHeight,displayWidth,dist,div,DOWN_ARROW,ellipse,endShape,fill,floor,frameCount,frameRate,height,image,key,keyCode,keyIsDown,keyIsPressed,keyIsPressed,keyPressed,LEFT,LEFT_ARROW,lerpColor,line,loadImage,loadJSON,loadSound,map,mouseIsPressed,mouseX,mouseY,noFill,noLoop,normalMaterial,noStroke,p5,plane,point,pointLight,pop,push,push,RADIANS,radians,random,rect,resizeCanvas,resizeCanvas,RIGHT,RIGHT_ARROW,rotate,rotateX,rotateY,rotateZ,round,round,scale,shuffle,sin,sphere,stroke,strokeWeight,text,textAlign,textFont,textSize,texture,textWidth,torus,translate,triangle,UP_ARROW,WEBGL,width,windowHeight,windowHeight,windowWidth,world */
 </script>
