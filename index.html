@@ -79,6 +79,10 @@ function moveRight() {
 function moveLeft() {
   speed = -30; //gives the circle velocity towards the left
 }
+       
+function windowResized() { //this detects when the window is resized, such as entering fullscreen mode, or changing orientation of the device.
+  resizeCanvas(windowWidth, windowHeight); //resizes the canvas to the new dimensions 
+}
    
   //This detects if the prototype is opened in Soli Sandbox, and sends an alert to the user that soli functionality will not work in other apps/browswe
   if(!navigator.userAgent.includes("Soli Sandbox")){ alert("This prototype needs to be opened in Soli Sandbox in order to receive Soli Events. Soli functionality will not work.");} else {console.log("Soli Sandbox Detected");}
