@@ -19,6 +19,8 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
       t = 0; //start the ripple animation
     }
     if(event.type == 'swipe') {
+       console.log("tap detected");
+      t = 0;
       // if(event.data.direction == '1') {
       //  console.log("right swipe detected");
       //  moveRight();
