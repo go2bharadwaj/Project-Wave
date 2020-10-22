@@ -15,12 +15,12 @@
 //This file uses p5.js, a library for making art. You can look up the documentation here: https://p5js.org/reference/ if there are terms you don't recognize. If you don't find it there, it's probably just regular Javascript. You can find its documentation here: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
     if(event.type == 'tap') {
-      console.log("tap detected");
-      t = 0;//start the ripple animation
+       console.log("tap detected");
+       t = 0;//start the ripple animation
     }
     if(event.type == 'swipe') {
       
-      if(event.data.direction == '1') {
+      if(event.data.direction == '2') {
           console.log("right swipe detected");
           moveRight();
         } else if (event.data.direction == '5') {
