@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>soli p5js starter</title>
+    <title>Project Wave</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
@@ -15,19 +15,20 @@
 //This file uses p5.js, a library for making art. You can look up the documentation here: https://p5js.org/reference/ if there are terms you don't recognize. If you don't find it there, it's probably just regular Javascript. You can find its documentation here: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
     if(event.type == 'tap') {
-      //start the ripple animation
+      console.log("tap detected");
+      t = 0;//start the ripple animation
     }
     if(event.type == 'swipe') {
-      console.log("tap detected");
-      t = 0;
-      // if(event.data.direction == '1') {
-      //  console.log("right swipe detected");
-      //  moveRight();
-      // } else if (event.data.direction == '5') {
-      //  console.log("left swipe detected");
-      //  moveLeft();
-      // }
+      
+      if(event.data.direction == '1') {
+          console.log("right swipe detected");
+          moveRight();
+        } else if (event.data.direction == '5') {
+          console.log("left swipe detected");
+          moveLeft();
+        }
     }
+  
     if(event.type == 'presence') {
       // do something
     }
