@@ -42,6 +42,7 @@ let radius = 200; //radius of the circle
 let t = 300; //variable to keep track of the frame of the ripple animation
 let position, speed, force; // variables to define the motion for swipe event interaction
 let direction = 0; //1 for right, -1 for left
+let num = 0
 
 function setup(){ //When the page loads
   createCanvas(window.innerWidth,window.innerHeight); //create a canvas for the game to display on.
@@ -50,15 +51,21 @@ function setup(){ //When the page loads
 }
 
 function draw(){ // this is a loop that runs forever
+  /*
   noStroke();
   fill(255,100,255); //This sets the drawing color to white. You can change this color to change the color of the circle
   updateLocation();
-  background(0); // This sets the background color. Change the number here to change the background color.
+  background(1); // This sets the background color. Change the number here to change the background color.
   ellipse( //draw a circle. You can try rect(x,y,radius); for rectangles, or whole bunch of other shapes listed here under "Shape": https://p5js.org/reference/
      position, // This sets the X coordinate. Here, it's a simple quadratic equation, centered on the screen.
      height/2, //This sets the y coordinate.
      radius); //this sets the size of the ball
   drawRipple();
+  */
+  clear();
+  num = touches.length + num;
+  let display = num + ' touches';
+  text(display, 6, 50);
 }
 
 function updateLocation() {
