@@ -1,7 +1,9 @@
 #header {
-    width: 100%;
-    background-color: red;
-    height: 30px;
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }
 
 #container {
