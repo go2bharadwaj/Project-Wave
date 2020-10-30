@@ -1,50 +1,68 @@
-#header {
-    width: 270px;
-    background-color: red;
-  color: #000;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    height: 50px;
+#header1 {
+  width: 230px;
+
+  border: 15px solid white;
+  color: #ffffff;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
+    -1px 0 0 #000000;
+  height: 50px;
 }
 
+#header2 {
+  width: 230px;
+  background-color: red;
+  border: 15px solid white;
+  color: #ffffff;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
+    -1px 0 0 #000000;
+  height: 50px;
+}
 
 question {
-    display:table-cell;
+  display: table-cell;
   line-height: 100px;
-    width: 115px;
-    height: 60px;
-    background-color: blue;
-    border: 15px solid white;
-    text-align: center;
+  width: 115px;
+  height: 60px;
+  background-color: blue;
+  border: 15px solid white;
+  text-align: center;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 40px
+  font-size: 40px;
+
 }
 first {
-    display:table-cell;
+  display: table-cell;
   line-height: 100px;
-    width: 100px;
-    height: 100px;
-    float: left;
-    background-color: #4287f5;
-    border: 15px solid white;
-    text-align: center;
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-color: #4287f5;
+  border: 15px solid white;
+  text-align: center;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 40px
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
+    -1px 0 0 #000000;
 }
 second {
-    display:table-cell;
-    width: 100px;
+  display: table-cell;
+  width: 100px;
   line-height: 100px;
-    height: 100px;
-    float: left;
-    background-color: #4287f5;
-    border: 15px solid white;
-    text-align: center;
+  height: 100px;
+  float: left;
+  background-color: #4287f5;
+  border: 15px solid white;
+  text-align: center;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 40px
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
+    -1px 0 0 #000000;
 }
 #clear {
-    clear: both;
+  clear: both;
 }
