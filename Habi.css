@@ -1,15 +1,18 @@
 #header {
-  background-color: lightgrey;
+<!-- background-color: lightgrey;
   width: 300px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px;
+  
+  -->
 }
 
 #container {
-    width: 300px;
+ <!--   width: 300px;
     background-color: #ffcc33;
     margin: auto;
+  -->
 }
 #first {
     width: 100px;
@@ -19,7 +22,7 @@
 }
 #second {
     width: 200px;
-    float: left;
+    float: right;
     height: 300px;
     background-color: green;
 }
