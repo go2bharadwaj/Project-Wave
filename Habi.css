@@ -1,7 +1,9 @@
 #header {
-    width: 115px;
+    width: 270px;
     background-color: red;
-    height: 30px;
+  color: #000;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    height: 50px;
 }
 
 
@@ -13,6 +15,9 @@ question {
     background-color: blue;
     border: 15px solid white;
     text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px
 }
 first {
     display:table-cell;
@@ -23,6 +28,9 @@ first {
     background-color: #4287f5;
     border: 15px solid white;
     text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px
 }
 second {
     display:table-cell;
@@ -33,6 +41,9 @@ second {
     background-color: #4287f5;
     border: 15px solid white;
     text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px
 }
 #clear {
     clear: both;
