@@ -1,4 +1,3 @@
-let a = 2+2;
-let b = 
-document.body.innerHTML = "<first>" + d + "</first>"
+var a = 2+3;
+let b = Math.floor((Math.random(0) * 10) + 1);
 
