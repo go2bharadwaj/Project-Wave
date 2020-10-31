@@ -13,15 +13,15 @@
        
 var s;
 
-function setup{
+function setup {
   createCanvas(600, 600);
-  s = new Snake();
+  //s = new Snake();
 } 
        
 function draw() {
   background(1);
-  s.update();
-  s.show();
+  //s.update();
+  //s.show();
   
   //fill(value);
   //rect(25, 25, 50, 50);
@@ -33,7 +33,7 @@ function Snake(){
   this.xspeed = 1;
   this.ysspeed = 0;
   
-  this.update = function(){
+  this.update = function() {
     this.x = this.x + this.xspeed;
     this.y = this.y + this.yspeed;
   }
