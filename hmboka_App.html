@@ -22,9 +22,15 @@
       var randy = Math.floor((Math.random(0) * 5) + 1);
       var randz = Math.floor((Math.random(0) * 10) + 1);
       var correctAns = randx + randy;
-      var question = randx + " + " + randy;
+      var question = randx + " + " + randy + " = ";
       var ans1 = 0;
       var ans2 = 0;
+      
+            
+      
+      document.getElementById("header2").innerHTML = question;
+      
+
       
       var decider = Math.floor((Math.random(0) * 5) + 1);   
       if(decider >= 3){
@@ -36,15 +42,10 @@
       else{
         ans1 = correctAns;
         document.getElementById("second").innerHTML = correctAns;
-        document.getElementById("first").innerHTML = correctAns;
+        document.getElementById("first").innerHTML = randz;
       }
       
-      
-      
-      document.getElementById("header2").innerHTML = question;
-      
-      document.getElementById("first").innerHTML = randx;
-      document.getElementById("second").innerHTML = randy;
+
       
       
       
