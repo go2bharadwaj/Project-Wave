@@ -13,8 +13,7 @@
     background: linear-gradient(to bottom right, #FFB900, #FF7730);
   border: 15px solid white;
   color: #ffffff;
-  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
-    -1px 0 0 #000000;
+
   height: 50px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -36,8 +35,7 @@
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
-    -1px 0 0 #000000;
+
 }
 #second {
   display: table-cell;
@@ -52,8 +50,7 @@
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
-    -1px 0 0 #000000;
+
 }
 #clear {
   clear: both;
