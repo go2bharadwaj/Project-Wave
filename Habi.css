@@ -42,7 +42,7 @@
   width: 100px;
   line-height: 100px;
   height: 100px;
-  float: left;
+  float: right;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
   border: 15px solid white;
   text-align: center;
