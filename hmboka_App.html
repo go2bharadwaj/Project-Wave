@@ -16,17 +16,17 @@
     <div id="first"></div>
 
     <div id="second"></div>
-    <script type="text/javascript">
+    <script type="text/javascript"> //javascript code starts here using script tag
       
-      var randx = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5
+      var randx = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5 for first num in equation
       var randy = Math.floor((Math.random(0) * 5) + 1);
-      var randz = Math.floor((Math.random(0) * 10) + 1);
-      var correctAns = randx + randy;
-      var question = randx + " + " + randy + " = ";
+      var randz = Math.floor((Math.random(0) * 10) + 1); //incorrect answer
+      var correctAns = randx + randy; //cprrect answer
+      var question = randx + " + " + randy + " = "; //string for question
       var ans1 = 0;
       var ans2 = 0;
       
-      //glitch not loading test tomorrow
+      //glitch not loading test tomorrow prevents correct answer twice
       if(randz = correctAns){
         randz = Math.floor((Math.random(0) * 10) + 1);
       }  
