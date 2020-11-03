@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project Wave</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> <!--p5js version 1-->
-     <script>
-       
-       
-       
-
-       
-       
-  
-       
-         //This detects if the prototype is opened in Soli Sandbox, and sends an alert to the user that soli functionality will not work in other apps/browswe
-  if(!navigator.userAgent.includes("Soli Sandbox")){ alert("This prototype needs to be opened in Soli Sandbox in order to receive Soli Events. Soli functionality will not work.");} else {console.log("Soli Sandbox Detected");}
-   
-//This defines all of p5.js' tools so that glitch recognizes them
-/*global abs,angleMode,append,background,beginShape,bezier,box,camera,ceil,CENTER,color,cone,cos,createCanvas,createCanvas,createGraphics,curveVertex,cylinder,DEGREES,displayHeight,displayWidth,dist,div,DOWN_ARROW,ellipse,endShape,fill,floor,frameCount,frameRate,height,image,key,keyCode,keyIsDown,keyIsPressed,keyIsPressed,keyPressed,LEFT,LEFT_ARROW,lerpColor,line,loadImage,loadJSON,loadSound,map,mouseIsPressed,mouseX,mouseY,noFill,noLoop,normalMaterial,noStroke,p5,plane,point,pointLight,pop,push,push,RADIANS,radians,random,rect,resizeCanvas,resizeCanvas,RIGHT,RIGHT_ARROW,rotate,rotateX,rotateY,rotateZ,round,round,scale,shuffle,sin,sphere,stroke,strokeWeight,text,textAlign,textFont,textSize,texture,textWidth,torus,translate,triangle,UP_ARROW,WEBGL,width,windowHeight,windowHeight,windowWidth,world */
-</script>
-<style>
-html, body {
-  margin: 0;
-  height: 100%;
-  width:100%;
-  overflow: hidden
-}
-</style>
+    <link rel="stylesheet" href="Habi.css" /> <!--import css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--this formats boxes to any device screen size-->
+    <style></style>
   </head>
   <body>
+    
+    <script type="text/javascript"> //javascript code starts here using script tag
+      
+      var snake;
+
+function setup(){
+  createCanvas(600, 600);
+  snake = new Snake();
+} 
+       
+function draw() {
+  background(1);
+  snake.update();
+  snake.show();
+  
+  //fill(value);
+  //rect(25, 25, 50, 50);
+}
+       
+function Snake(){
+  this.x = 0;
+  this.y = 0;
+  this.xspeed = 1;
+  this.ysspeed = 0;
+  
+  this.update = function() {
+    this.x = this.x + this.xspeed;
+    this.y = this.y + this.yspeed;
+  }
+  
+  this.show = function(){
+    fill(255)
+    rect(this.x,this.y, 10,10);
+  }
+}
+  
+      
+    </script>
   </body>
 </html>
