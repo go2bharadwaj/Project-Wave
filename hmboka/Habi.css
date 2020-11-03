@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
-#header1 {
-  width: 230px;
-  background-color: red;
-  color: #ffffff;
-  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
-    -1px 0 0 #000000;
-  height: 50px;
-}
+
 
 #header2 {
   background: linear-gradient(to bottom right, #FFB900, #FF7730);
