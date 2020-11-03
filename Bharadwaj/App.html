@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Bharadwaj.css" /> <!--import css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--this formats boxes to any device screen size-->
+    <style></style>
+  </head>
+  <body>
+    <script src="Bharadwaj.js" type="text/javascript"></script>
+
+    <div id="header2"></div>
+
+    <div id="first"></div>
+
+    <div id="second"></div>
+
+    
+    <script type="text/javascript"> //javascript code starts here using script tag
+      
+      var randx = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5 for first num in equation
+      var randy = Math.floor((Math.random(0) * 5) + 1);//creates number 0 to 5 for second num in equation
+      var randz = Math.floor((Math.random(0) * 10) + 1); //incorrect answer
+      var correctAns = randx + randy; //correct answer
+      var question = randx + " + " + randy + " = "; //string for question
+      var ans1 = 0;
+      var ans2 = 0;
+      
+      //glitch not loading test tomorrow prevents correct answer twice
+      if(randz = correctAns){
+        randz = Math.floor((Math.random(0) * 10) + 1);
+      }  
+      
+
+      document.getElementById("header2").innerHTML = question;
+      
+
+      
+      var decider = Math.floor((Math.random(0) * 5) + 1);   
+      if(decider >= 3){
+        ans1 = correctAns;
+        document.getElementById("first").innerHTML = correctAns;
+        document.getElementById("second").innerHTML = randz;
+        
+      }
+      else{
+        ans1 = correctAns;
+        document.getElementById("second").innerHTML = correctAns;
+        document.getElementById("first").innerHTML = randz;
+      }
+      
+   
+    </script>
+  </body>
+</html>
