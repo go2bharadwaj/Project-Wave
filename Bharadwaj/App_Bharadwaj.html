@@ -24,12 +24,46 @@ function draw() {
   //fill(value);
   //rect(25, 25, 50, 50);
 }
-       
+
+window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
+    if(event.type == 'swipe') {
+      if(event.data.direction == '1') {  // 1-> right
+          console.log("right swipe detected");
+          s.dir(1, 0);
+        } 
+      else if (event.data.direction == '5') { //5-> left
+          console.log("left swipe detected");
+          s.dir(-1, 0);
+        }
+      else if (event.data.direction == '3') { //3-> up
+          console.log("up swipe detected");
+          s.dir(0, -1);
+        }
+      else if (event.data.direction == '7') { //7-> down
+          console.log("down swipe detected");
+          s.dir(0, 1);
+        }
+    }
+  
+    if(event.type == 'presence') {
+      // do something
+    }
+    if(event.type == 'reach') {
+      //console.log("tap detected");
+      //t = 0;// do something
+    }
+};
+      
 function Snake(){
   this.x = 0;
   this.y = 0;
   this.xspeed = 1;
   this.yspeed = 0;
+  
+  this.dir = function(x,y){
+    this.xspeed = x;
+    this.yspeed = y;
+  }
   
   this.update = function() {
     this.x = this.x + this.xspeed;
