@@ -17,8 +17,8 @@ var food;
 function setup(){
   createCanvas(395, 700);
   s = new Snake();
-  food = createVector(random(width), random(height));
-  food = pickLocation();
+  frameRate(10);
+  pickLocation();
 } 
 
 function pickLocation(){
@@ -33,6 +33,7 @@ function draw() {
   background(51);
   s.update();
   s.show();
+  
   if(s.eat(food)){
     pickLocation();
   }
@@ -77,7 +78,7 @@ function Snake(){
   this.yspeed = 0;
   
   this.eat = function(pos){
-    var d = dist(this.x,this,y, pos.x,pos.y);
+    var d = dist(this.x, this.y, pos.x, pos.y);
     if(d < 1){
       return true;
     } else{
