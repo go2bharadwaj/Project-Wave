@@ -39,10 +39,10 @@ function game(){
                 if(event.type == 'swipe') {
                   // 1-> right, 7-> down, 5-> left, 3-> up
                   if(event.data.direction == '1') {
-                      console.log("right swipe detected");
-                      RightSelected();
-                      LoadTotal(total);
-                      if(problemNo !== gameMode - 1 ){
+                    if(problemNo !== gameMode - 1 ){
+                        console.log("right swipe detected");
+                        RightSelected();
+                        LoadTotal(total);
                         problemNo = problemNo + 1;
                         game();
                       }
@@ -51,13 +51,13 @@ function game(){
                       }
                   } 
                   else if (event.data.direction == '5') {
-                      console.log("left swipe detected");
-                      LeftSelected();
-                      LoadTotal(total);
-                      if(problemNo !== gameMode - 1 ){
-                        problemNo = problemNo + 1;
-                        game();
-                      }
+                        if(problemNo !== gameMode - 1 ){
+                            console.log("left swipe detected");
+                            LeftSelected();
+                            LoadTotal(total);
+                            problemNo = problemNo + 1;
+                            game();
+                          }
                       else{
                         end();
                       }
@@ -161,12 +161,13 @@ function game(){
   } 
       
 function end(){
+   document.getElementById("header2").innerHTML = "Total!";
    document.getElementById("first").innerHTML = "->";
    document.getElementById("second").innerHTML = "<-";
    var elem1 = document.getElementById("first");
    elem1.style.color = 'gold';
    var elem2 = document.getElementById("second");
-   elem2.style.color = 'white';
+   elem2.style.color = 'gold';
 }
     </script>
   </body>
