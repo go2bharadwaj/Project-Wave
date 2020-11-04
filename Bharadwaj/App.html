@@ -46,6 +46,9 @@ function game(){
                         problemNo = problemNo + 1;
                         game();
                       }
+                      else{
+                        end();
+                      }
                   } 
                   else if (event.data.direction == '5') {
                       console.log("left swipe detected");
@@ -54,6 +57,9 @@ function game(){
                       if(problemNo !== gameMode - 1 ){
                         problemNo = problemNo + 1;
                         game();
+                      }
+                      else{
+                        end();
                       }
                     }
                 }
@@ -118,7 +124,8 @@ function game(){
             function MakeWhite(){
                var elem1 = document.getElementById("first");
                elem1.style.color = 'white';
-              
+               var elem2 = document.getElementById("second");
+               elem2.style.color = 'white';
             }
 
 
@@ -137,8 +144,8 @@ function game(){
             }
 
             function LoadOptions(correct_num,incorrect_num){
-                let decider = Math.floor((Math.random(0) * 5) + 1);   
-                  if(decider >= 3){
+                let decider = generateRandom(0, 2, -1);   
+                  if(decider === 0){
                     document.getElementById("first").innerHTML = correct_num;
                     document.getElementById("second").innerHTML = incorrect_num;
                     combo = 1;
@@ -151,7 +158,16 @@ function game(){
             }
             //_________________________________________________________________________________________________________________________________________________________________________________________________
             //_________________________________________________________________________________________________________________________________________________________________________________________________
-  }   
+  } 
+      
+function end(){
+   document.getElementById("first").innerHTML = "->";
+   document.getElementById("second").innerHTML = "<-";
+   var elem1 = document.getElementById("first");
+   elem1.style.color = 'gold';
+   var elem2 = document.getElementById("second");
+   elem2.style.color = 'white';
+}
     </script>
   </body>
 </html>

@@ -21,7 +21,7 @@
   height: 100px;
   float: left;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
-  border: 15px solid white;
+  border: 7px solid gold;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -36,7 +36,7 @@
   height: 100px;
   float: right;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
-  border: 15px solid white;
+  border: 7px solid gold;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
