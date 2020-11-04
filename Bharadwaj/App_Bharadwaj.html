@@ -18,12 +18,14 @@ function setup(){
   createCanvas(395, 700);
   s = new Snake();
   food = createVector(random(width), random(height));
+  food = pickLocation();
 } 
 
 function pickLocation(){
   var cols = floor(width/scl);
   var rows = floor(height/scl);
-  food
+  food = createVector(floor(random(cols)), floor(random(rows)));
+  food.mult(scl); 
 }
       
       
@@ -31,6 +33,9 @@ function draw() {
   background(51);
   s.update();
   s.show();
+  if(s.eat(food)){
+    pickLocation();
+  }
   
   fill(255, 0 , 100);
   rect(food.x, food.y, scl, scl);
@@ -70,6 +75,15 @@ function Snake(){
   this.y = 0;
   this.xspeed = 1;
   this.yspeed = 0;
+  
+  this.eat = function(pos){
+    var d = dist(this.x,this,y, pos.x,pos.y);
+    if(d < 1){
+      return true;
+    } else{
+      return false;
+    }
+  }
   
   this.dir = function(x,y){
     this.xspeed = x;
