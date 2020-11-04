@@ -12,14 +12,14 @@
 var snake;
 
 function setup(){
-  createCanvas(600, 600);
-  snake = new Snake();
+  createCanvas(395, 700);
+  s = new Snake();
 } 
        
 function draw() {
-  background(1);
-  snake.update();
-  snake.show();
+  background(51);
+  s.update();
+  s.show();
   
   //fill(value);
   //rect(25, 25, 50, 50);
@@ -29,7 +29,7 @@ function Snake(){
   this.x = 0;
   this.y = 0;
   this.xspeed = 1;
-  this.ysspeed = 0;
+  this.yspeed = 0;
   
   this.update = function() {
     this.x = this.x + this.xspeed;
