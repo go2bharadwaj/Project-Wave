@@ -15,7 +15,7 @@
 
     <div id="second"></div>
     
-    <div id="third"></div> <!-- To display the box > -->
+    <!--<div id="third"></div> <!-- To display the box > -->
 
     
     <script type="text/javascript"> //javascript code starts here using script tag
@@ -53,6 +53,7 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
       let num2 = generateRandom(0, 5, -1);//creates number 0 to 5 for second num in equation
       let correct_num = num1 + num2; //correct answer
       let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
+      var combo;
       
       LoadQuestion(num1,num2);
       LoadOptions(correct_num,incorrect_num);
@@ -63,13 +64,33 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
 function LeftSelected(){
-  document.getElementById("second").innerHTML = ;
-  
-  
+  if(combo === 1){
+    var elem1 = document.getElementById("first");
+    elem1.style.color = 'green';
+    var elem2 = document.getElementById("second");
+    elem2.style.color = 'white';
+  }
+  else if(combo === 2){
+    var elem1 = document.getElementById("first");
+    elem1.style.color = 'red';
+    var elem2 = document.getElementById("second");
+    elem2.style.color = 'white';
+  }
 }
       
 function RightSelected(){
-  
+  if(combo === 1){
+    var elem1 = document.getElementById("first");
+    elem1.style.color = 'white';
+    var elem2 = document.getElementById("second");
+    elem2.style.color = 'red';
+  }
+  else if(combo === 2){
+    var elem1 = document.getElementById("first");
+    elem1.style.color = 'white';
+    var elem2 = document.getElementById("second");
+    elem2.style.color = 'green';
+  }
 }
 
       
@@ -88,11 +109,12 @@ function LoadOptions(correct_num,incorrect_num){
       if(decider >= 3){
         document.getElementById("first").innerHTML = correct_num;
         document.getElementById("second").innerHTML = incorrect_num;
-        
+        combo = 1;
       }
       else{
         document.getElementById("second").innerHTML = correct_num;
         document.getElementById("first").innerHTML = incorrect_num;
+        combo = 2;
       }
 }
 //_________________________________________________________________________________________________________________________________________________________________________________________________
