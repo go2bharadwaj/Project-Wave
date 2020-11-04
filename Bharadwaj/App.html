@@ -19,39 +19,35 @@
     
     <script type="text/javascript"> //javascript code starts here using script tag
       
-      var num1 = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5 for first num in equation
-      var num2 = Math.floor((Math.random(0) * 5) + 1);//creates number 0 to 5 for second num in equation
-      
-      var incorrect_num = Math.floor((Math.random(0) * 10) + 1); //incorrect answer
-      var correct_num = num1 + num2; //correct answer
-      var question = num1 + " + " + num2 + " = "; //string for question
-      var ans1 = 0;
-      //var ans2 = 0;
-
-      //glitch not loading test tomorrow prevents correct answer twice
       
       
-      if(incorrect_num = correct_num){
-        incorrect_num = Math.floor((Math.random(0) * 10) + 1);
-      }  
+//SOLI___________________________________________________________________________________________________________________________________________________________
+window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
+    if(event.type == 'tap') {
+       console.log("tap detected");
+    }
+    if(event.type == 'swipe') {
+      // 1-> right, 7-> down, 5-> left, 3-> up
+      if(event.data.direction == '1') {
+          console.log("right swipe detected");
+          moveRight();
+        } 
+      else if (event.data.direction == '5') {
+          console.log("left swipe detected");
+          moveLeft();
+        }
+    }
+  
+    if(event.type == 'presence') {
+      // do something
+    }
+    if(event.type == 'reach') {
+      //console.log("tap detected");
+      //t = 0;// do something
+    }
+};
+//_________________________________________________________________________________________________________________________________________________________________
       
-
-      document.getElementById("header2").innerHTML = question;
-      
-
-      
-      var decider = Math.floor((Math.random(0) * 5) + 1);   
-      if(decider >= 3){
-        ans1 = correct_num;
-        document.getElementById("first").innerHTML = correct_num;
-        document.getElementById("second").innerHTML = incorrect_num;
-        
-      }
-      else{
-        ans1 = correct_num;
-        document.getElementById("second").innerHTML = correct_num;
-        document.getElementById("first").innerHTML = incorrect_num;
-      }
       
    
     </script>
