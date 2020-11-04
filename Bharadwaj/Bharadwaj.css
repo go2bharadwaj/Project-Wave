@@ -52,23 +52,7 @@
   height: 100px;
   float: center;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
-  border: 15px solid white;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #ffffff;
-
-}
-
-#Outline {
-  display: table-cell;
-  width: 100px;
-  line-height: 100px;
-  height: 100px;
-  float: center;
-  background: linear-gradient(to bottom right, #2998FF, #5643FA);
-  border: 15px solid white;
+  border: 7px solid red;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
