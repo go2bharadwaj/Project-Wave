@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="Habi.css" /> <!--import css-->
+    <link rel="stylesheet" href="Bharadwaj.css" /> <!--import css-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--this formats boxes to any device screen size-->
     <style></style>
   </head>
   <body>
+    <script src="Bharadwaj.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> <!--p5js version 1-->
     
      <div id="header2"></div>
@@ -15,11 +16,12 @@
       
 var s;
 var scl = 20;
-
 var food;
+let Header = "Snake Game!" //string for question
+document.getElementById("header2").innerHTML = Header;
 
 function setup(){
-  createCanvas(395, 700);
+  createCanvas(395, 650);
   s = new Snake();
   frameRate(10);
   pickLocation();
@@ -45,6 +47,8 @@ function draw() {
   fill(255, 0 , 100);
   rect(food.x, food.y, scl, scl);
 }
+
+
 
 window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
     if(event.type == 'swipe') {
@@ -85,7 +89,7 @@ function Snake(){
   
   this.eat = function(pos){
     var d = dist(this.x, this.y, pos.x, pos.y);
-    if(d < 1){
+    if(d < 3){
       this.total++;
       return true;
     } else{
