@@ -14,22 +14,23 @@
 
     <div id="second"></div>
     
-    <div id="third"></div>
+    <div id="third"></div> <!-- To display the box > -->
 
     
     <script type="text/javascript"> //javascript code starts here using script tag
       
-      var randx = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5 for first num in equation
-      var randy = Math.floor((Math.random(0) * 5) + 1);//creates number 0 to 5 for second num in equation
-      var randz = Math.floor((Math.random(0) * 10) + 1); //incorrect answer
-      var correctAns = randx + randy; //correct answer
-      var question = randx + " + " + randy + " = "; //string for question
+      var num1 = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5 for first num in equation
+      var num2 = Math.floor((Math.random(0) * 5) + 1);//creates number 0 to 5 for second num in equation
+      var incorrect_num = Math.floor((Math.random(0) * 10) + 1); //incorrect answer
+      
+      var correctAns = num1 + num2; //correct answer
+      var question = num1 + " + " + num2 + " = "; //string for question
       var ans1 = 0;
       //var ans2 = 0;
       
       //glitch not loading test tomorrow prevents correct answer twice
-      if(randz = correctAns){
-        randz = Math.floor((Math.random(0) * 10) + 1);
+      if(incorrect_num = correctAns){
+        incorrect_num = Math.floor((Math.random(0) * 10) + 1);
       }  
       
 
