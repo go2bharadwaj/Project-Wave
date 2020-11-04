@@ -17,11 +17,11 @@
 var s;
 var scl = 20;
 var food;
-let Header = "Snake Game!" //string for question
+let Header = "The World's Hardest Snake Game!" //string for question
 document.getElementById("header2").innerHTML = Header;
 
 function setup(){
-  createCanvas(395, 650);
+  createCanvas(395, 500);
   s = new Snake();
   frameRate(10);
   pickLocation();
@@ -89,7 +89,7 @@ function Snake(){
   
   this.eat = function(pos){
     var d = dist(this.x, this.y, pos.x, pos.y);
-    if(d < 3){
+    if(d < 2){
       this.total++;
       return true;
     } else{
