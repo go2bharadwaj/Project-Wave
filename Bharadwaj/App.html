@@ -31,7 +31,7 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
       if(event.data.direction == '1') {
           console.log("right swipe detected");
           moveRight();
-        } 
+      } 
       else if (event.data.direction == '5') {
           console.log("left swipe detected");
           moveLeft();
@@ -47,9 +47,41 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
     }
 };
 //_________________________________________________________________________________________________________________________________________________________________
+      let num1 = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5 for first num in equation
+      let num2 = Math.floor((Math.random(0) * 5) + 1);//creates number 0 to 5 for second num in equation
+      let incorrect_num = generateRandom(0, 10); //incorrect answergenerateRandom(min, max)
+      let correct_num = num1 + num2; //correct answer
       
+      let question = num1 + " + " + num2 + " = "; //string for question
+
+      //glitch not loading test tomorrow prevents correct answer twice
+      if(incorrect_num = correct_num){
+        incorrect_num = Math.floor((Math.random(0) * 10) + 1);
+      }  
       
-   
+
+      document.getElementById("header2").innerHTML = question;
+      AnswerOutput(correct_num,incorrect_num);
+       
+
+//Helper Functions_________________________________________________________________________________________________________________________________________________________________
+function generateRandom(min, max) {
+    var num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return (num === 8 || num === 15) ? generateRandom(min, max) : num;
+}
+      
+function AnswerOutput(correct_num,incorrect_num){
+    let decider = Math.floor((Math.random(0) * 5) + 1);   
+      if(decider >= 3){
+        document.getElementById("first").innerHTML = correct_num;
+        document.getElementById("second").innerHTML = incorrect_num;
+        
+      }
+      else{
+        document.getElementById("second").innerHTML = correct_num;
+        document.getElementById("first").innerHTML = incorrect_num;
+      }
+}
     </script>
   </body>
 </html>
