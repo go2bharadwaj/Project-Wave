@@ -21,9 +21,9 @@
       
       var num1 = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5 for first num in equation
       var num2 = Math.floor((Math.random(0) * 5) + 1);//creates number 0 to 5 for second num in equation
-      var incorrect_num = Math.floor((Math.random(0) * 10) + 1); //incorrect answer
       
-      var correctAns = num1 + num2; //correct answer
+      var incorrect_num = Math.floor((Math.random(0) * 10) + 1); //incorrect answer
+      var correct_num = num1 + num2; //correct answer
       var question = num1 + " + " + num2 + " = "; //string for question
       var ans1 = 0;
       //var ans2 = 0;
@@ -31,7 +31,7 @@
       //glitch not loading test tomorrow prevents correct answer twice
       
       
-      if(incorrect_num = correctAns){
+      if(incorrect_num = correct_num){
         incorrect_num = Math.floor((Math.random(0) * 10) + 1);
       }  
       
@@ -42,15 +42,15 @@
       
       var decider = Math.floor((Math.random(0) * 5) + 1);   
       if(decider >= 3){
-        ans1 = correctAns;
-        document.getElementById("first").innerHTML = correctAns;
-        document.getElementById("second").innerHTML = randz;
+        ans1 = correct_num;
+        document.getElementById("first").innerHTML = correct_num;
+        document.getElementById("second").innerHTML = incorrect_num;
         
       }
       else{
-        ans1 = correctAns;
-        document.getElementById("second").innerHTML = correctAns;
-        document.getElementById("first").innerHTML = randz;
+        ans1 = correct_num;
+        document.getElementById("second").innerHTML = correct_num;
+        document.getElementById("first").innerHTML = incorrect_num;
       }
       
    
