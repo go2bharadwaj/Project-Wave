@@ -7,8 +7,9 @@
   </head>
   <body>
     <script src="Bharadwaj.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> <!--p5js version 1-->
 
-    <div id="header2"></div>
+    <!--<div id="header2"></div>
 
     <div id="first"></div>
 
@@ -30,7 +31,7 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
       // 1-> right, 7-> down, 5-> left, 3-> up
       if(event.data.direction == '1') {
           console.log("right swipe detected");
-          Rightselected();
+          RightSelected();
       } 
       else if (event.data.direction == '5') {
           console.log("left swipe detected");
@@ -55,13 +56,28 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
       
       LoadQuestion(num1,num2);
       LoadOptions(correct_num,incorrect_num);
+      //setup();
+      //draw();
        
 
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
-function selected(){
+function LeftSelected(){
   
 }
+      
+function RightSelected(){
+  
+}
+
+function setup() {
+  createCanvas(100, 100, WEBGL);
+}
+
+function draw() {
+  background(51);
+}
+
       
 function generateRandom(min, max, exclude){
     var num = Math.floor(Math.random() * (max - min + 1)) + min;
