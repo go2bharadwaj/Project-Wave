@@ -34,7 +34,7 @@ function draw() {
   s.update();
   s.show();
   
-  if(s.eat(food)){
+  if(s.eat(food)) {
     pickLocation();
   }
   
@@ -76,10 +76,13 @@ function Snake(){
   this.y = 0;
   this.xspeed = 1;
   this.yspeed = 0;
+  this.total = 0;
+  this.tail = [];
   
   this.eat = function(pos){
     var d = dist(this.x, this.y, pos.x, pos.y);
     if(d < 1){
+      total++;
       return true;
     } else{
       return false;
@@ -92,11 +95,18 @@ function Snake(){
   }
   
   this.update = function() {
+    for(var i = 0; i < total-1; i++){
+      tail[i] = tail[i+1];
+    }
+    
+    
     this.x = this.x + this.xspeed*scl;
     this.y = this.y + this.yspeed*scl;
     
     this.x = constrain(this.x, 0, width-scl);
     this.y = constrain(this.y, 0, height-scl);
+    
+    
   }
   
   this.show = function(){
