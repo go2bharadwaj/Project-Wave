@@ -30,11 +30,11 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
       // 1-> right, 7-> down, 5-> left, 3-> up
       if(event.data.direction == '1') {
           console.log("right swipe detected");
-          moveRight();
+          Rightselected();
       } 
       else if (event.data.direction == '5') {
           console.log("left swipe detected");
-          moveLeft();
+          LeftSelected();
         }
     }
   
@@ -47,30 +47,33 @@ window.onSoliEvent = function(event) { // this function will run any time a gest
     }
 };
 //_________________________________________________________________________________________________________________________________________________________________
-      let num1 = Math.floor((Math.random(0) * 5) + 1); //creates number 0 to 5 for first num in equation
-      let num2 = Math.floor((Math.random(0) * 5) + 1);//creates number 0 to 5 for second num in equation
-      let incorrect_num = generateRandom(0, 10); //incorrect answergenerateRandom(min, max)
+      
+      let num1 = generateRandom(0, 5, -1);//creates number 0 to 5 for first num in equation
+      let num2 = generateRandom(0, 5, -1);//creates number 0 to 5 for second num in equation
       let correct_num = num1 + num2; //correct answer
+      let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
       
-      let question = num1 + " + " + num2 + " = "; //string for question
-
-      //glitch not loading test tomorrow prevents correct answer twice
-      if(incorrect_num = correct_num){
-        incorrect_num = Math.floor((Math.random(0) * 10) + 1);
-      }  
-      
-
-      document.getElementById("header2").innerHTML = question;
-      AnswerOutput(correct_num,incorrect_num);
+      LoadQuestion(num1,num2);
+      LoadOptions(correct_num,incorrect_num);
        
 
-//Helper Functions_________________________________________________________________________________________________________________________________________________________________
-function generateRandom(min, max) {
-    var num = Math.floor(Math.random() * (max - min + 1)) + min;
-    return (num === 8 || num === 15) ? generateRandom(min, max) : num;
+//Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
+//______________________________________________________________________________________________________________________________________________________________________________________________
+function selected(){
+  
 }
       
-function AnswerOutput(correct_num,incorrect_num){
+function generateRandom(min, max, exclude){
+    var num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return (num === exclude) ? generateRandom(min, max, exclude) : num;
+}
+      
+function LoadQuestion(num1,num2){
+      let question = num1 + " + " + num2 + " = "; //string for question
+      document.getElementById("header2").innerHTML = question;
+}
+      
+function LoadOptions(correct_num,incorrect_num){
     let decider = Math.floor((Math.random(0) * 5) + 1);   
       if(decider >= 3){
         document.getElementById("first").innerHTML = correct_num;
@@ -82,6 +85,8 @@ function AnswerOutput(correct_num,incorrect_num){
         document.getElementById("first").innerHTML = incorrect_num;
       }
 }
+//_________________________________________________________________________________________________________________________________________________________________________________________________
+//_________________________________________________________________________________________________________________________________________________________________________________________________
     </script>
   </body>
 </html>
