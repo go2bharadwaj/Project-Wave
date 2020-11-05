@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
+#background {
+  background-color: #17f9f2;
+  background-image: linear-gradient(315deg, #17f9f2 0%, #b0f9a9 74%);
+}
+
+
 #header1 {
   background: linear-gradient(to bottom right, #b8c6db, #f5f7fa);
   border: 15px solid white;
