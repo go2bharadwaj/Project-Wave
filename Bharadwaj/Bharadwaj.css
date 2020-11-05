@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
 #background {
-  background-color: #17f9f2;
-  background-image: linear-gradient(315deg, #17f9f2 0%, #b0f9a9 74%);
+  background-color: #db7f8e;
+background-image: linear-gradient(315deg, #db7f8e 0%, #7b0d1e 74%);
   border: 15px solid white;
   color: #ffffff;
   width: 100%
@@ -76,7 +76,7 @@
   line-height: 100px;
   height: 100px;
   float: center;
-  background: linear-gradient(to bottom right, #2998FF, #5643FA);
+  background: linear-gradient(to bottom right, #17f9f2, #fe0944);
   border: 7px solid orange;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -92,7 +92,9 @@
   line-height: 50px;
   height: 100px;
   float: center;
-  background: linear-gradient(to bottom right, #2998FF, #5643FA);
+  background: linear-gradient(to bottom right, #17f9f2, #fe0944);
+  background-color: #feae96;
+background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
   border: 7px solid orange;
   text-align: center;
   font-family: "Open Sans", sans-serif;

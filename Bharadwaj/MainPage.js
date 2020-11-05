@@ -1,4 +1,4 @@
-let question = "=============================" //string for question
+let question = "Welcome to Project Wave!" //string for question
 document.getElementById("background").innerHTML = question;
 
 function changeColor(newColor) {
