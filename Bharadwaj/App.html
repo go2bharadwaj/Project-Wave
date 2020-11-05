@@ -40,7 +40,8 @@ function game(){
             let correct_num = num1 + num2; //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-        
+            
+            LoadHeader();
             LoadQuestion(num1,num2);
             LoadOptions(correct_num,incorrect_num);
             LoadTotal(total);
@@ -88,7 +89,7 @@ function game(){
             }
             
             function LoadHeader(){
-              document.getElementById("header1").innerHTML = question;
+              document.getElementById("header1").innerHTML = "Project Wave";
               var elem1 = document.getElementById("header1");
               elem1.style.color = 'black';
             }
@@ -123,45 +124,46 @@ function game(){
             }
             //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
-                if(event.type == 'tap') {
-                   console.log("tap detected");
-                }
-                if(event.type == 'swipe') {
-                  // 1-> right, 7-> down, 5-> left, 3-> up
-                  if(event.data.direction == '1') {
-                    if(problemNo !== gameMode - 1 ){
-                        console.log("right swipe detected");
-                        RightSelected();
-                        LoadTotal(total);
-                        problemNo = problemNo + 1;
-                        game();
-                      }
-                      else{
-                        end();
-                      }
-                  } 
-                  else if (event.data.direction == '5') {
-                        if(problemNo !== gameMode - 1 ){
-                            console.log("left swipe detected");
-                            LeftSelected();
-                            LoadTotal(total);
-                            problemNo = problemNo + 1;
-                            game();
-                          }
-                      else{
-                        end();
-                      }
+              if(problemNo !== gameMode){
+                
+                    if(event.type == 'tap') {
+                       console.log("tap detected");
                     }
-                }
+                
+                    if(event.type == 'swipe') {
+                        // 1-> right, 7-> down, 5-> left, 3-> up
+                        if(event.data.direction == '1') {
+                              console.log("right swipe detected");
+                              RightSelected(); 
+                              LoadTotal(total);
+                              problemNo = problemNo + 1;
+                              game();
+                        } 
+                        else if (event.data.direction == '5') {
+                              console.log("left swipe detected");
+                              LeftSelected();
+                              LoadTotal(total);
+                              problemNo = problemNo + 1;
+                              game();
+                        }  
+                    }
 
-                if(event.type == 'presence') {
-                  // do something
-                }
-                if(event.type == 'reach') {
-                  //console.log("tap detected");
-                  //t = 0;// do something
-                }
-            };
+                    if(event.type == 'presence') {
+                      // do something
+                    }
+                    if(event.type == 'reach') {
+                      //console.log("tap detected");
+                      //t = 0;// do something
+                    }
+                
+               
+               
+              }
+              
+              else{
+                 end();
+              }
+          };
             //_________________________________________________________________________________________________________________________________________________________________
             //_________________________________________________________________________________________________________________________________________________________________________________________________
             //_________________________________________________________________________________________________________________________________________________________________________________________________
