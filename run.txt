@@ -3,5 +3,7 @@ https://project-wave.glitch.me/
 https://www.eggradients.com/category/white-gradient
 
 
-background-color: #89d8d3;
-background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+                                     --------App_5.html -------
+   MainPage.html ------GameMode.html ------------App_10.html------   App.js
+                                     ---------App_15.html-------
+
