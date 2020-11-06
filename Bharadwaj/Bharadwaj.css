@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
-#background {
+#MainHeader {
   background-color: #db7f8e;
-background-image: linear-gradient(315deg, #db7f8e 0%, #7b0d1e 74%);
+  background-image: linear-gradient(315deg, #db7f8e 0%, #7b0d1e 74%);
   border: 15px solid white;
   color: #ffffff;
   width: 100%
@@ -86,23 +86,17 @@ background-image: linear-gradient(315deg, #db7f8e 0%, #7b0d1e 74%);
 
 }
 
-#Cell {
-  display: table-cell;
-  width: 50px;
-  line-height: 50px;
-  height: 100px;
-  float: center;
-  background: linear-gradient(to bottom right, #17f9f2, #fe0944);
-  background-color: #feae96;
-background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
-  border: 7px solid orange;
+#button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #ffffff;
-
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
+
 
 #clear {
   clear: both;
