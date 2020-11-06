@@ -1,5 +1,6 @@
-let question = "Welcome to Project Wave!" //string for question
-document.getElementById("MainHeader").innerHTML = question;
+document.getElementById("MainHeader").innerHTML = "Welcome to Project Wave!";
+document.getElementById("button").innerHTML = "Click to Begin";
+
 
 function changeColor(newColor) {
   var elem = document.getElementById('para');
