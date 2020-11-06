@@ -97,6 +97,20 @@ function game(){
             function LoadAnswerCol(){
               
             }
+            
+            function LoadEnd(){
+              document.getElementById("header2").innerHTML = "Total!";
+              document.getElementById("first").innerHTML = "->";
+              document.getElementById("second").innerHTML = "<-";
+              var elem1 = document.getElementById("first");
+              elem1.style.color = 'gold';
+              var elem2 = document.getElementById("second");
+              elem2.style.color = 'gold';
+            }
+             
+            function end(){
+               LoadEnd();
+            }   
             //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
               if(problemNo !== gameMode){
@@ -144,15 +158,7 @@ function game(){
             //_________________________________________________________________________________________________________________________________________________________________________________________________
   } 
       
-function end(){
-   document.getElementById("header2").innerHTML = "Total!";
-   document.getElementById("first").innerHTML = "->";
-   document.getElementById("second").innerHTML = "<-";
-   var elem1 = document.getElementById("first");
-   elem1.style.color = 'gold';
-   var elem2 = document.getElementById("second");
-   elem2.style.color = 'gold';
-}      
+   
 
 
 
