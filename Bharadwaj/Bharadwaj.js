@@ -1,5 +1,6 @@
 var total = 0;
 var problemNo = 0;
+var cars = [];
 game();
       
 
@@ -15,6 +16,7 @@ function game(){
             LoadQuestion(num1,num2);
             LoadOptions(correct_num,incorrect_num);
             LoadTotal(total);
+            LoadAnswerCol();
 
 
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
@@ -91,6 +93,10 @@ function game(){
                     document.getElementById("first").innerHTML = incorrect_num;
                     combo = 2;
                   }
+            }
+            
+            function LoadAnswerCol(){
+              
             }
             //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
