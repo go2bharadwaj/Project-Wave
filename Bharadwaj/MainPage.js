@@ -1,3 +1,4 @@
+var cars = [];
 document.getElementById("MainHeader").innerHTML = "Welcome to Project Wave!";
 document.getElementById("buttonBegin").innerHTML = "Click to Begin";
 

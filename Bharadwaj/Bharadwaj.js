@@ -1,6 +1,5 @@
 var total = 0;
 var problemNo = 0;
-var cars = [];
 game();
       
 
@@ -16,7 +15,7 @@ function game(){
             LoadQuestion(num1,num2);
             LoadOptions(correct_num,incorrect_num);
             LoadTotal(total);
-            LoadAnswerCol();
+            //LoadAnswerCol();
 
 
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
