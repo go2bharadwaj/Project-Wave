@@ -2,8 +2,10 @@ https://project-wave.glitch.me/
 
 https://www.eggradients.com/category/white-gradient
 
+https://p5js.org/reference/#group-Lights,%20Camera
 
-                                     --------App_5.html -------
-   MainPage.html ------GameMode.html ------------App_10.html------   App.js
-                                     ---------App_15.html-------
-
+                                              ___________________________
+                                              |--------App_5.html ------|
+   MainPage.html ------ GameMode.html ------- |--------App_10.html------| -------  App.js
+                                              |--------App_15.html------|
+                                              
