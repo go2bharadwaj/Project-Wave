@@ -128,7 +128,23 @@ function game(){
              
             function end(){
                LoadEnd();
-            }   
+            }
+  
+  
+            function move() {
+                var elem = document.getElementById("myBar");   
+                var width = 1;
+                var id = setInterval(frame, 10);
+                function frame() {
+                  if (width >= 100) {
+                    clearInterval(id);
+                  } else {
+                    width++; 
+                    elem.style.width = width + '%'; 
+                  }
+                }
+              }
+  
             //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
               if(problemNo !== gameMode){
