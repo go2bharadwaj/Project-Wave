@@ -90,14 +90,13 @@
 
 #buttonBegin {
   background-color: #4CAF50; /* Green */
-  border: none;
+  border: 15px;
   color: white;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 90%;
+  width: 100%;
   border-radius: 8px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margins: 10px 50px 10px 10px;
