@@ -1,9 +1,21 @@
+
+
 var total = 0;
 var problemNo = 0;
 game();
       
 
 function game(){  
+            if(problemNo !== gameMode){
+            document.addEventListener('keydown', function(event) {
+            if(event.keyCode == 37) {
+              LeftSelected();
+            }
+            else if(event.keyCode == 39) {
+              RightSelected();
+            }
+            })
+            }
             
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
