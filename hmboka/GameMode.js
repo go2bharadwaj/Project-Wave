@@ -1,6 +1,6 @@
 var cars = [];
-document.getElementById("MainHeader").innerHTML = "Select Game Mode";
-document.getElementById("buttonBegin").innerHTML = "Click to Begin";
+document.getElementById("MainHeader").innerHTML = "Select Game Mode"; //provides text in main header
+document.getElementById("buttonBegin").innerHTML = "Click to Begin"; //provides text for button
 
 
 function changeColor(newColor) {
