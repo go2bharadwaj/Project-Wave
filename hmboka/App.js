@@ -1,6 +1,7 @@
 var total = 0;
 var problemNo = 0;
 var probNum = 0;
+
 game();
 //var gameMode = 5;
 
