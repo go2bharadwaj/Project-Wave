@@ -89,7 +89,7 @@ function game(){
                   if(decider === 0){
                     document.getElementById("first").innerHTML = correct_num;
                     document.getElementById("second").innerHTML = incorrect_num;
-                    combo = 1;
+                    combo = 1; //this is the variable used to identify which option is teh correct one
                   }
                   else{
                     document.getElementById("second").innerHTML = correct_num;
