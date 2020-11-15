@@ -119,8 +119,56 @@
   cursor: pointer;
     position: relative;
 }
-  #button2 {
-    z-index:2;
+  #5Questions {
+  z-index:1;
+  background-color: #4fa2ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  float: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    position: relative;
+}
+  #10Questions {
+  z-index:2;
+  background-color: #4fa2ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  float: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    position: relative;
+}
+  #5Questions {
+  z-index:3;
+  background-color: #4fa2ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  float: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    position: relative;
+}
+  #20Questions {
+    z-index:3;
   background-color: #4fa2ff;
   border: none;
   color: white;
