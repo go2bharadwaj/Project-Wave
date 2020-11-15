@@ -20,14 +20,16 @@ function game(){
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
-              if(combo === 1){
+              //when combo is one, the first box is correct
+              //when combo is 2, then the second box is correct
+              if(combo === 1){ //so if left swipe selected and combo is 1, then user chose correct answer so make green and add to total score
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
                 var elem2 = document.getElementById("second");
                 elem2.style.color = 'white';
                 total = total + 1;
               }
-              else if(combo === 2){
+              else if(combo === 2){ //if right swipe is detected yet combo is 
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'red';
                 var elem2 = document.getElementById("second");
@@ -87,9 +89,9 @@ function game(){
             function LoadOptions(correct_num,incorrect_num){
                 let decider = generateRandom(0, 2, -1);   
                   if(decider === 0){
-                    document.getElementById("first").innerHTML = correct_num;
-                    document.getElementById("second").innerHTML = incorrect_num;
-                    combo = 1; //this is the variable used to identify which option is teh correct one
+                    document.getElementById("first").innerHTML = correct_num; //puts correct answer into first box
+                    document.getElementById("second").innerHTML = incorrect_num; //puts incorrect answer into second box
+                    combo = 1; //this is the variable used to identify which option is the correct one
                   }
                   else{
                     document.getElementById("second").innerHTML = correct_num;
