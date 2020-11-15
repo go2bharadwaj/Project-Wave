@@ -1,6 +1,6 @@
 var total = 0;
 var problemNo = 0;
-var probNum = 1;
+var probNum = 0;
 game();
 //var gameMode = 5;
 
@@ -8,19 +8,23 @@ function game() {
   
     //USER INPUT WITH KEYBOARD
     document.addEventListener("keydown", function(event) {
-  if (probNum <= 5) {
+    if (problemNo !== gameMode) {
       if (event.keyCode == 37) {
-        console.log("left swipe detected");
-        console.log(probNum);
         LeftSelected();
         LoadTotal(total);
-        problemNo = problemNo + 1;
+        
         game();
+        problemNo = problemNo + 1;
+        console.log("left swipe detected");
+        console.log(problemNo);
       } else if (event.keyCode == 39) {
         RightSelected();
         LoadTotal(total);
-        problemNo = problemNo + 1;
+       
         game();
+         problemNo = problemNo + 1;
+        console.log("right swipe detected");
+        console.log(problemNo);
       }
     } else {
       end();
