@@ -19,12 +19,12 @@
   </style> 
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> <!--p5js version 1-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> <!--p5js version 1: allows for soli integration-->
     
     
     <script type="text/javascript">
     
-    var gameMode = 5;
+    var gameMode = 5; <!-- sets how many questions are asked -->
     
     </script>
      <!--  -->
@@ -39,8 +39,9 @@
     <div id="third"></div> <!-- Displays score > -->
     
 
-    <script src="App.js" type="text/javascript"></script> <!-- Calls App.js to show answers, score, and numbers for each question -->
+    <script src="App.js" type="text/javascript"></script> <!-- sources app.js which handles what goes inside all boxes -->
     
+    <!-- adds button which directs you to mainpage html -->
     <form action="MainPage.html">
     <input type="submit" value="Click to go back to home!" />
     </form>

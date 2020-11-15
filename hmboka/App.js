@@ -7,7 +7,7 @@ function game(){
             
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
-            let correct_num = LoadCorrect_num(num1,num2); //correct answer
+            let correct_num = LoadCorrect_num(num1,num2); //calls LoadCorrect to generate a correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
   
@@ -70,7 +70,7 @@ function game(){
             }
 
 
-            function generateRandom(min, max, exclude){
+            function generateRandom(min, max, exclude){ //generates random question which excludes a value, in this case the correct answer to prevent duplicates
                 var num = Math.floor(Math.random() * (max - min + 1)) + min;
                 return (num === exclude) ? generateRandom(min, max, exclude) : num;
             }
@@ -107,12 +107,12 @@ function game(){
               
             }
             
-            function LoadCorrect_num(num1, num2){
+            function LoadCorrect_num(num1, num2){ //chooses whether or not the math question will be addition or subtraction
               let decider = generateRandom(0, 2, -1);
               let number;
                   if(decider === 0){
                      number = num1 + num2;
-                     LoadAdditionQuestion(num1,num2);
+                     LoadAdditionQuestion(num1,num2); 
                   }
                   else{
                      number = num1 - num2;
