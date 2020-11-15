@@ -3,26 +3,19 @@ var problemNo = 0;
 var probNum = 0;
 game();
 //var gameMode = 5;
-
-function game() {
-  
-    //USER INPUT WITH KEYBOARD
     document.addEventListener("keydown", function(event) {
     if (problemNo !== gameMode) {
       if (event.keyCode == 37) {
         LeftSelected();
         LoadTotal(total);
-        
         game();
-        problemNo = problemNo + 1;
+
         console.log("left swipe detected");
         console.log(problemNo);
       } else if (event.keyCode == 39) {
         RightSelected();
         LoadTotal(total);
-       
         game();
-         problemNo = problemNo + 1;
         console.log("right swipe detected");
         console.log(problemNo);
       }
@@ -30,13 +23,17 @@ function game() {
       end();
     }
   });
+function game() {
+  
+    //USER INPUT WITH KEYBOARD
+
 
   let num1 = generateRandom(1, 5, -1); //creates number 0 to 5 for first num in equation
   let num2 = generateRandom(1, 5, -1); //creates number 0 to 5 for second num in equation
   let correct_num = LoadCorrect_num(num1, num2); //calls LoadCorrect to generate a correct answer
   let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
   var combo = 0;
-
+  problemNo = problemNo + 1;
   //LoadHeader();
   LoadOptions(correct_num, incorrect_num);
   LoadTotal(total);
