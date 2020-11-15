@@ -10,6 +10,7 @@ function game(){
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
+  
             
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
@@ -19,32 +20,34 @@ function game(){
 
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
-            function LeftSelected(){
-              //when combo is one, the first box is correct
+            function LeftSelected(){ //this function is called when a left swipe is detected
+              //when combo is 1, the first box is correct
               //when combo is 2, then the second box is correct
-              if(combo === 1){ //so if left swipe selected and combo is 1, then user chose correct answer so make green and add to total score
+              if(combo === 1){ //so if left swipe selected and combo is 1, then user chose correct answer so make first box green and add to total score
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
                 var elem2 = document.getElementById("second");
                 elem2.style.color = 'white';
                 total = total + 1;
               }
-              else if(combo === 2){ //if right swipe is detected yet combo is 
+              else if(combo === 2){ //if left swipe is detected yet combo is 2 (2 meaning the second box is correct) make box red and do not add to total score
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'red';
                 var elem2 = document.getElementById("second");
                 elem2.style.color = 'white';
               }
             }
-
-            function RightSelected(){
-              if(combo === 1){
+            
+            function RightSelected(){ //this function is called when a right swipe is detected
+              //when combo is 1, the first box is correct
+              //when combo is 2, then the second box is correct
+              if(combo === 1){ //if right swipe is detected yet combo is 1 (1 meaning the first box is correct) make box red and do not add to total score
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
                 var elem2 = document.getElementById("second");
                 elem2.style.color = 'red';
               }
-              else if(combo === 2){
+              else if(combo === 2){ //but if right swipe selected and combo is also 2, then user chose correct answer so make second box green and add to total score
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
                 var elem2 = document.getElementById("second");
@@ -72,22 +75,22 @@ function game(){
                 return (num === exclude) ? generateRandom(min, max, exclude) : num;
             }
 
-            function LoadTotal(total){ 
+            function LoadTotal(total){ //prints total score in center box
                   document.getElementById("third").innerHTML = total;
             }
 
-            function LoadAdditionQuestion(num1,num2){
+            function LoadAdditionQuestion(num1,num2){ //prints addition question in header2 box 
                   let question = num1 + " + " + num2 + " = "; //string for question
                   document.getElementById("header2").innerHTML = question;
             }
   
-            function LoadSubtractionQuestion(num1,num2){
+            function LoadSubtractionQuestion(num1,num2){ //prints subtraction question in header2 box 
                   let question = num1 + " - " + num2 + " = "; //string for question
                   document.getElementById("header2").innerHTML = question;
             }
 
-            function LoadOptions(correct_num,incorrect_num){
-                let decider = generateRandom(0, 2, -1);   
+            function LoadOptions(correct_num,incorrect_num){ //this function decides which box will contain the correct answer
+                let decider = generateRandom(0, 2, -1); 
                   if(decider === 0){
                     document.getElementById("first").innerHTML = correct_num; //puts correct answer into first box
                     document.getElementById("second").innerHTML = incorrect_num; //puts incorrect answer into second box
