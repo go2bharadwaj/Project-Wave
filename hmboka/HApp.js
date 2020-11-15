@@ -1,10 +1,31 @@
 var total = 0;
 var problemNo = 0;
+var probNum = 1;
 game();
 //var gameMode = 5;
 
 function game() {
-
+  
+    //USER INPUT WITH KEYBOARD
+    document.addEventListener("keydown", function(event) {
+  if (probNum <= 5) {
+      if (event.keyCode == 37) {
+        console.log("left swipe detected");
+        console.log(probNum);
+        LeftSelected();
+        LoadTotal(total);
+        problemNo = problemNo + 1;
+        game();
+      } else if (event.keyCode == 39) {
+        RightSelected();
+        LoadTotal(total);
+        problemNo = problemNo + 1;
+        game();
+      }
+    } else {
+      end();
+    }
+  });
 
   let num1 = generateRandom(1, 5, -1); //creates number 0 to 5 for first num in equation
   let num2 = generateRandom(1, 5, -1); //creates number 0 to 5 for second num in equation
@@ -23,6 +44,7 @@ function game() {
     //this function is called when a left swipe is detected
     //when combo is 1, the first box is correct
     //when combo is 2, then the second box is correct
+    probNum += 1;
     if (combo === 1) {
       //so if left swipe selected and combo is 1, then user chose correct answer so make first box green and add to total score
       var elem1 = document.getElementById("first");
@@ -43,6 +65,7 @@ function game() {
     //this function is called when a right swipe is detected
     //when combo is 1, the first box is correct
     //when combo is 2, then the second box is correct
+    probNum += 1;
     if (combo === 1) {
       //if right swipe is detected yet combo is 1 (1 meaning the first box is correct) make box red and do not add to total score
       var elem1 = document.getElementById("first");
@@ -153,24 +176,7 @@ function game() {
       }
     }
   }
-  //USER INPUT WITH KEYBOARD
-    document.addEventListener("keydown", function(event) {
-    if (problemNo !== gameMode) {
-      if (event.keyCode == 37) {
-        LeftSelected();
-        LoadTotal(total);
-        problemNo = problemNo + 1;
-        game();
-      } else if (event.keyCode == 39) {
-        RightSelected();
-        LoadTotal(total);
-        problemNo = problemNo + 1;
-        game();
-      }
-    } else {
-      end();
-    }
-  });
+
   
   
   
