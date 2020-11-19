@@ -1,7 +1,7 @@
 var total = 0;
 var problemNo = 0;
 game();
-      
+
 
 function game(){  
             
