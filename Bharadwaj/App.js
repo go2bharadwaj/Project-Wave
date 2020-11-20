@@ -177,10 +177,7 @@ function game(){
                     if(event.type == 'reach') {
                       //console.log("tap detected");
                       //t = 0;// do something
-                    }
-                
-               
-               
+                    } 
               }
               
               else{
