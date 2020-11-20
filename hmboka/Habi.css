@@ -34,7 +34,8 @@
 
 
 #RedDot {
-  position: absolute;
+  z-index: 1;
+  position: relative;
   height: 50px;
   width: 50px;
   background: linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);
