@@ -128,10 +128,6 @@ function game(){
               var elem2 = document.getElementById("second");
               elem2.style.color = 'gold';
             }
-             
-            function end(){
-               LoadEnd();
-            }
   
   
             function move() {
@@ -184,7 +180,7 @@ function game(){
               }
               
               else{
-                 end();
+                 LoadEnd();
               }
           };
             //_________________________________________________________________________________________________________________________________________________________________
