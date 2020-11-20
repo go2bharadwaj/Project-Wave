@@ -59,6 +59,19 @@
   display: inline-block;
 }
 
+#YellowDot {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background: linear-gradient(to right, #ffbb00 0%, #e2d05a 100%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
+
 #dot {
   position: absolute;
   height: 75px;
