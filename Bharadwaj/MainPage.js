@@ -1,8 +1,7 @@
 var cars = [];
 document.getElementById("MainHeader").innerHTML = "Welcome to Project Wave!";
 document.getElementById("buttonBegin").innerHTML = "Click to Begin";
-var number = 1;
-document.getElementById("RedDot").innerHTML = number;
+document.getElementById("YellowDot").innerHTML = "1";
 
 
 function changeColor(newColor) {
