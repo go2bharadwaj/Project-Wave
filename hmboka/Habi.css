@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+
+#MainHeader { 
+  background-color: #db7f8e;
+  background-image: linear-gradient(315deg, #db7f8e 0%, #7b0d1e 74%);
+  border: 15px white;
+  color: #ffffff;
+  width: 100%
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align:center;
+  font-size: 40px;
+}
+
+
+#button{
+  background-color: #4fa2ff;
+  z-index: 1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  float: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+#RedDot {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);
+  border-radius: 50%;
+  border: white;
+  font-size: 35px;
+  display: inline-block;
+  text-align:center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+  
+#GreenDot {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+ background: linear-gradient(to right, #6ce474 0%, #76a77c 100%);
+  border-radius: 50%;
+  border: white;
+  font-size: 35px;
+  display: inline-block;
+  text-align:center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+#GreyDot {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(to right, #bababa 0%, #949494 100%);
+  border-radius: 50%;
+  border: white;
+  font-size: 35px;
+  display: inline-block;
+  text-align:center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+#YellowDot {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(to right, #ffbb00 0%, #e2d05a 100%);
+  border-radius: 50%;
+  border: white;
+  font-size: 35px;
+  display: inline-block;
+  text-align:center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+#dot {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background: linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);
+  border-radius: 50%;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+}
+
+#clear {
+  clear: both;
+}
+
