@@ -32,13 +32,26 @@
   position: relative;
 }
 
+#Wdot {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background: linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
 #dot {
   position: absolute;
   height: 75px;
   width: 75px;
-  background: linear-gradient(to right, #ec3232 44%, #ee4f4f 100%);
+  background: linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);
   border-radius: 50%;
   display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align:center;
+  font-size: 40px;
 }
 
 #clear {
