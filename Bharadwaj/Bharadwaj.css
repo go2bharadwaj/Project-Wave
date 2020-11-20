@@ -35,42 +35,58 @@
 
 #RedDot {
   position: absolute;
-  height: 75px;
-  width: 75px;
-  background-image:  linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);
   border-radius: 50%;
+  border: white;
+  font-size: 35px;
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
   text-align:center;
   font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 }
   
 #GreenDot {
   position: absolute;
-  height: 75px;
-  width: 75px;
-  background: linear-gradient(to right, #6ce474 0%, #76a77c 100%);
+  height: 50px;
+  width: 50px;
+ background: linear-gradient(to right, #6ce474 0%, #76a77c 100%);
   border-radius: 50%;
+  border: white;
+  font-size: 35px;
   display: inline-block;
+  text-align:center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 }
 
 #GreyDot {
   position: absolute;
-  height: 75px;
-  width: 75px;
- background: linear-gradient(to right, #bababa 0%, #949494 100%);
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(to right, #bababa 0%, #949494 100%);
   border-radius: 50%;
+  border: white;
+  font-size: 35px;
   display: inline-block;
+  text-align:center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 }
 
 #YellowDot {
   position: absolute;
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
   background: linear-gradient(to right, #ffbb00 0%, #e2d05a 100%);
   border-radius: 50%;
+  border: white;
+  font-size: 35px;
   display: inline-block;
+  text-align:center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 }
 
 
