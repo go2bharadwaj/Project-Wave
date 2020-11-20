@@ -104,6 +104,33 @@
   font-size: 40px;
 }
 
+#RedDot {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background: linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#GreenDot {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background: linear-gradient(to right, #6ce474 0%, #76a77c 100%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#GreyDot {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+ background: linear-gradient(to right, #bababa 0%, #949494 100%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
 #clear {
   clear: both;
 }
