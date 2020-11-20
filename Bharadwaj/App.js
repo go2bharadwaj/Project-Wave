@@ -59,7 +59,8 @@ function game(){
             }
             
             function LoadHeader(){
-              document.getElementById("header1").innerHTML = "Project Wave";
+              // add animation
+              document.getElementById("header1").innerHTML = "<- Swipe ->";
               var elem1 = document.getElementById("header1");
               elem1.style.color = 'black';
             }
