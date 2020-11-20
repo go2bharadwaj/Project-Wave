@@ -15,20 +15,22 @@
 }
 
 
-#buttonBegin {
-  background-color: #4CAF50; /* Green */
-  border: 15px;
+#button{
+  background-color: #4fa2ff;
+  z-index: 1;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  float: center;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  margins: 10px 50px 10px 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
 }
-
 
 #clear {
   clear: both;
