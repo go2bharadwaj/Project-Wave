@@ -74,7 +74,7 @@ function game(){
             }
 
             function LoadTotal(total){ 
-                  document.getElementById("third").innerHTML = total;
+                  document.getElementById("third").innerHTML = total + "/5";
             }
 
             function LoadAdditionQuestion(num1,num2){
