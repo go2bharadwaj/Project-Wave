@@ -1,21 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
-
-#MainHeader { 
+#MainHeader {
   background-color: #db7f8e;
   background-image: linear-gradient(315deg, #db7f8e 0%, #7b0d1e 74%);
   border: 15px white;
   color: #ffffff;
-  width: 100%
+  width: 100%;
   height: 50px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  text-align:center;
+  text-align: center;
   font-size: 40px;
 }
 
-
-#button{
+#button {
   background-color: #4fa2ff;
   z-index: 1;
   border: none;
@@ -43,21 +41,21 @@
   border: white;
   font-size: 35px;
   display: inline-block;
-  text-align:center;
+  text-align: center;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
 }
-  
+
 #GreenDot {
   position: absolute;
   height: 50px;
   width: 50px;
- background: linear-gradient(to right, #6ce474 0%, #76a77c 100%);
+  background: linear-gradient(to right, #6ce474 0%, #76a77c 100%);
   border-radius: 50%;
   border: white;
   font-size: 35px;
   display: inline-block;
-  text-align:center;
+  text-align: center;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
 }
@@ -71,7 +69,7 @@
   border: white;
   font-size: 35px;
   display: inline-block;
-  text-align:center;
+  text-align: center;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
 }
@@ -85,14 +83,10 @@
   border: white;
   font-size: 35px;
   display: inline-block;
-  text-align:center;
+  text-align: center;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
 }
-
-
-
-
 
 #dot {
   position: absolute;
@@ -107,4 +101,3 @@
 #clear {
   clear: both;
 }
-

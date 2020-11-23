@@ -1,3 +1,27 @@
+.grid-container {
+  display: grid;
+  height: 100px;
+  width: 100%;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: none;
+  background-color: #FFFFFF;
+  padding: 0px;
+}
+.grid-container > div {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(to right, #bababa 0%, #949494 100%);
+  border-radius: 50%;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
 .c1 {
   float: center;
   position: relative;
