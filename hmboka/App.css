@@ -38,12 +38,12 @@
 }
 #second {
   display: table-cell;
-  width: 100px;
   line-height: 100px;
+  width: 100px;
   height: 100px;
   float: right;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
-  border: 7px solid white;
+  border: 15px solid white;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
