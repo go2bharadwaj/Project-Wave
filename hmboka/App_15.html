@@ -20,6 +20,25 @@
       body {
         color: #FFFFFF;
       }
+      .grid-container {
+        display: grid;
+        height: 100px;
+        width: 200px;
+        align-content: space-evenly;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: none;
+        background-color: #2196F3;
+        padding: 0px;
+      }
+
+      .grid-container > div {
+        height: 30px;
+        width: 30px;
+        background: linear-gradient(to right, #bababa 0%, #949494 100%);
+        border-radius: 50%;
+        text-align: center;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
