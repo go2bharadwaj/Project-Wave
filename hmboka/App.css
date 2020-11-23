@@ -23,10 +23,9 @@
 }
 
 #first {
-  display: table-cell;
   line-height: 100px;
-  width: 100px;
-  height: 100px;
+  width: 15%;
+  height: 15%;
   float: left;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
   border: 15px solid white;
@@ -37,7 +36,6 @@
   color: #ffffff;
 }
 #second {
-  display: table-cell;
   line-height: 100px;
   width: 100px;
   height: 100px;
@@ -52,11 +50,10 @@
 }
 
 #third {
-  display: table-cell;
   width: 300px;
   line-height: 100px;
   height: 100px;
-  float: center;
+  margin:0 auto;
   background: linear-gradient(to bottom right, #17f9f2, #fe0944);
   border: 7px solid orange;
   text-align: center;
