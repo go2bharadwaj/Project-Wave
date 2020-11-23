@@ -1,30 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
-#header1 {
+#header1 { /* displays swipe instruction */
   background: linear-gradient(to bottom right, #b8c6db, #f5f7fa);
   border: 15px solid white;
   color: #ffffff;
-  width: 100%
-  height: 50px;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  text-align:center;
+  text-align: center;
   font-size: 40px;
-  margin: 10px 10px 10px 10px;
 }
 
-#header2 {
+#header2 {/* displays math equation instruction */
   background: linear-gradient(to bottom right, #FFB900, #FF7730);
   border: 15px solid white;
   color: #ffffff;
-  width: 100%
-  height: 50px;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  text-align:center;
+  text-align: center;
   font-size: 40px;
 }
-
 
 #first {
   display: table-cell;
@@ -33,13 +29,12 @@
   height: 100px;
   float: left;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
-  border: 7px solid white;
+  border: 15px solid white;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-
 }
 #second {
   display: table-cell;
@@ -54,7 +49,6 @@
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-
 }
 
 #third {
@@ -70,26 +64,23 @@
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-
 }
 
-#button{
+#button {
   background-color: #4fa2ff;
   z-index: 1;
   border: none;
   color: white;
-  padding: 15px 32px;
+  border: 15px solid white;
   float: center;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   position: relative;
 }
-
 
 #dot {
   position: relative;
@@ -100,7 +91,7 @@
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  text-align:center;
+  text-align: center;
   font-size: 40px;
 }
 
@@ -126,27 +117,25 @@
   position: absolute;
   height: 75px;
   width: 75px;
- background: linear-gradient(to right, #bababa 0%, #949494 100%);
+  background: linear-gradient(to right, #bababa 0%, #949494 100%);
   border-radius: 50%;
   display: inline-block;
 }
 
-
-{
-   background: url('https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fyo.png?v=1605845438323') -411px -540px no-repeat;
-   width: 20px;
-   height: 20px;
-   border: none;
+ {
+  background: url("https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fyo.png?v=1605845438323") -411px -540px
+    no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
 }
 
-
-#BacktoHome{
-    background: url(https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fyo.png?v=1605845438323);
-    border: 0;
-    height: 20px;
-    width: 20px;
+#BacktoHome {
+  background: url(https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fyo.png?v=1605845438323);
+  border: 0;
+  height: 20px;
+  width: 20px;
 }
-
 
 #clear {
   clear: both;
