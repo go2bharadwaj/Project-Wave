@@ -8,7 +8,8 @@
   position: relative;
   background-color: #FFFFFF;
   border: 15px white;
-  float: center;
+    margin-left: auto;
+  margin-right: auto;
 }
 .grid-container > div {
   height: 50px;
@@ -16,11 +17,14 @@
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
   border-radius: 50%;
   border: 15px white;
+  
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 25px;
+    margin-left: auto;
+  margin-right: auto;
 
 }
 
