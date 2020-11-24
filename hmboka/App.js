@@ -7,14 +7,14 @@ game();
 function game(){  
               document.addEventListener("keydown", function(event) {
               if (problemNo !== gameMode) {
-                if (event.keyCode == 37) {
+                if (event.key === 'ArrowLeft') {
                   LeftSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
                   game();
                   console.log("left swipe detected");
                   console.log(problemNo);
-                } else if (event.keyCode == 39) {
+                } else if (event.key === 'ArrowRight') {
                   RightSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
@@ -49,6 +49,7 @@ function game(){
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
+              boolMakeYellow = false;
               if(combo === 1){
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
@@ -65,6 +66,7 @@ function game(){
             }
 
             function RightSelected(){
+              boolMakeYellow = false;
               if(combo === 1){
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
@@ -84,45 +86,58 @@ function game(){
               var progressID = "";
               console.log("IN SELECTPROGID");
                   if (problemNo == 1) {
-                  progressID = "pgcirctrying";
-                } else if (problemNo == 2) {
-                  progressID = "pgc1";
-                } else if (problemNo == 3) {
-                  progressID = "pgc1";
-                } else if (problemNo == 4) {
-                  progressID = "pgc1";
-                } else if (problemNo == 5) {
-                  progressID = "pgc1";
-                } else if (problemNo == 5) {
-                  progressID = "pgc1";
-                } else if (problemNo == 6) {
-                  progressID = "pgc1";
-                } else if (problemNo == 7) {
-                  progressID = "pgc1";
-                } else if (problemNo == 8) {
-                  progressID = "pgc1";
-                } else if (problemNo == 9) {
-                  progressID = "pgc1";
-                } else if (problemNo == 10) {
-                  progressID = "pgc1";
-                } else if (problemNo == 11) {
-                  progressID = "pgc1";
-                } else if (problemNo == 12) {
-                  progressID = "pgc1";
-                } else if (problemNo == 13) {
-                  progressID = "pgc1";
-                } else if (problemNo == 14) {
-                  progressID = "pgc1";
-                } else {
-                  progressID = "pgc1";
+                  progID = "pgcirctrying";
+                } 
+                else if (problemNo == 2) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 3) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 4) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 5) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 6) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 7) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 8) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 9) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 10) {
+                  progID = "pgc1";
                 }
-              return progressID;
+                else if (problemNo == 11) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 12) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 13) {
+                  progID = "pgc1";
+                } 
+                else if (problemNo == 14) {
+                  progID = "pgc1";
+                } 
+                else {
+                  progID = "pgc1";
+                }
+              return progID;
             }
             
             function makeYellow(){
                 circleVar = document.getElementById(progID);
                 if (boolMakeYellow == true) {
-                  testingVar.style.background = "yellow";
+                  circleVar.style.background = "yellow";
+                }
             }
             
             function MakeWhite(){
