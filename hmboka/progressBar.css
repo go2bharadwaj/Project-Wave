@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  height: 100px;
+  height: 150px;
   width: 100%;
   align-content: space-evenly;
   grid-template-columns: auto auto auto auto auto;
@@ -12,6 +12,7 @@
   margin-right: auto;
 }
 .grid-container > div {
+  line-height: 50px;
   height: 50px;
   width: 50px;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
