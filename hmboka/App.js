@@ -35,12 +35,12 @@ function game(){
   
             console.log(progID);      
             progID = getProgID();
-
+            LoadHeader();
+            LoadOptions(correct_num,incorrect_num);
             var tryingProg = document.getElementById(progID);
             tryingProg.style.background = 'yellow';
             
-            LoadHeader();
-            LoadOptions(correct_num,incorrect_num);
+
             LoadTotal(total);
             //LoadAnswerCol();
            
