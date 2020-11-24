@@ -10,7 +10,8 @@ function game(){
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-            
+            var x = document.getElementById("grid-container").getElementsByTagName("c1");
+            x[0].style.backgroundColor = "#FFFFFF";            
             
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
