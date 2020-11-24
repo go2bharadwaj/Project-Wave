@@ -1,6 +1,7 @@
 var total = 0;
 var problemNo = 0;
 var progID = "";
+
 game();
 
 
@@ -31,10 +32,11 @@ function game(){
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-          
+      console.log(progID);      
             progID = getProgID();
-            var tryingProg = document.getElementById("first");
-            tryingProg.style.color = 'yellow';
+
+            var tryingProg = document.getElementById(progID);
+            tryingProg.style.background = 'yellow';
             
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
@@ -44,42 +46,64 @@ function game(){
 
   function getProgID(){
     var circNum = "";
+    
     if(problemNo == 1){
-      circNum = "pgc1"
+      circNum = "pgc1";
     }
     else if(problemNo == 2){
+      circNum = "pgc2";
       
     }
     else if(problemNo == 3){
+      circNum = "pgc3";
       
     }
     else if(problemNo == 4){
-      circNum = "pgc1"
+      circNum = "pgc4";
     }
     else if(problemNo == 5){
+      circNum = "pgc5";
       
     }
     else if(problemNo == 6){
+      circNum = "pgc6";
       
     }
-        if(problemNo == 1){
-      circNum = "pgc1"
+    else if(problemNo == 7){
+      circNum = "pgc7";
     }
-    else if(problemNo == 2){
+    else if(problemNo == 8){
+      circNum = "pgc8";
       
     }
-    else if(problemNo == 3){
+    else if(problemNo == 9){
+      circNum = "pgc9";
       
     }
-    else if(problemNo == 4){
-      circNum = "pgc1"
+    else if(problemNo == 10){
+      circNum = "pgc10";
     }
-    else if(problemNo == 5){
+    else if(problemNo == 11){
+      circNum = "pgc11";
       
     }
-    else if(problemNo == 6){
+    else if(problemNo == 12){
+      circNum = "pgc12";
       
     }
+    else if(problemNo == 13){
+      circNum = "pgc13";
+      
+    }
+    else if(problemNo == 14){
+      circNum = "pgc14";
+    }
+    else {
+      circNum = "pgc15";
+      
+    }
+    return circNum;
+
   }
   
   
