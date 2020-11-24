@@ -152,9 +152,9 @@ function getProgID(){
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
               console.log("Left click: made it here and progId is", progID);
-              
+              progID = getProgID();
               if(combo === 1){
-                progID = getProgID();
+                
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'green';
   
@@ -172,6 +172,7 @@ function getProgID(){
 
             function RightSelected(){
               console.log("Right click: made it here and progId is", progID);
+              progID = getProgID();
               //problemNo = problemNo + 1;
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
