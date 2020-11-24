@@ -78,36 +78,36 @@ function game(){
   function getProgID(){
     var circNum = "";
     
-    if(problemNo == 1){
+    if(problemNo == 0){
       circNum = "pgc1";
     }
-    else if(problemNo == 2){
+    else if(problemNo == 1){
       circNum = "pgc2";
       
     }
-    else if(problemNo == 3){
+    else if(problemNo == 2){
       circNum = "pgc3";
       
     }
-    else if(problemNo == 4){
+    else if(problemNo == 3){
       circNum = "pgc4";
     }
-    else if(problemNo == 5){
+    else if(problemNo == 4){
       circNum = "pgc5";
       
     }
-    else if(problemNo == 6){
+    else if(problemNo == 5){
       circNum = "pgc6";
       
     }
-    else if(problemNo == 7){
+    else if(problemNo == 6){
       circNum = "pgc7";
     }
-    else if(problemNo == 8){
+    else if(problemNo == 7){
       circNum = "pgc8";
       
     }
-    else if(problemNo == 9){
+    else if(problemNo == 8){
       circNum = "pgc9";
       
     }
@@ -175,10 +175,10 @@ function game(){
               else if(combo === 2){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'green';
-                var elem1 = document.getElementById("first");
-                elem1.style.color = 'white';
-                var elem2 = document.getElementById("second");
-                elem2.style.color = 'green';
+                // var elem1 = document.getElementById("first");
+                // elem1.style.color = 'white';
+                // var elem2 = document.getElementById("second");
+                // elem2.style.color = 'green';
                 total = total + 1;
               }
             }
