@@ -1,5 +1,6 @@
+console.log("gamemode = ", gameMode);
 var total = 0;
-var problemNo = 0;
+var problemNo = 1;
 var progID = "";
 
 game();
@@ -27,6 +28,7 @@ function game(){
                 LoadEnd();
               }
             });
+  console.log("problemNo = ", problemNo);
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
