@@ -10,19 +10,24 @@ function game(){
               document.addEventListener("keydown", function(event) {
               if (problemNo !== gameMode) {
                 if (event.key == 'ArrowLeft') {
+                  console.log("left swipe detected");
                   LeftSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
-                  game();
-                  console.log("left swipe detected");
+                  LoadHeader();
+                  LoadOptions(correct_num,incorrect_num);
                   console.log(problemNo);
+                  //game();
+                  
+                 
                 } else if (event.key === 'ArrowRight') {
+                  console.log("right swipe detected");
                   RightSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
-                  game();
-                  console.log("right swipe detected");
-                  console.log(problemNo);
+                  //game();
+                  //console.log("right swipe detected");
+                  //console.log(problemNo);
                 }
               } else {
                 LoadEnd();
