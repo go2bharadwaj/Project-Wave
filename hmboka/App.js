@@ -14,6 +14,10 @@ function game(){
                   LeftSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
+                              let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
+            let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
+            let correct_num = LoadCorrect_num(num1,num2); //correct answer
+            let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
                   LoadHeader();
                   LoadOptions(correct_num,incorrect_num);
                   console.log(problemNo);
@@ -25,6 +29,10 @@ function game(){
                   RightSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
+                              let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
+            let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
+            let correct_num = LoadCorrect_num(num1,num2); //correct answer
+            let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
                   LoadHeader();
                   LoadOptions(correct_num,incorrect_num);
                   console.log(problemNo);
@@ -32,6 +40,7 @@ function game(){
                   //console.log("right swipe detected");
                   //console.log(problemNo);
                 }
+                
               } else {
                 LoadEnd();
               }
