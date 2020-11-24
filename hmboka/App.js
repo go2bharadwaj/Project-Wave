@@ -1,5 +1,6 @@
 var total = 0;
 var problemNo = 0;
+var progID = "";
 game();
 
 
@@ -44,6 +45,7 @@ function game(){
             function LeftSelected(){
               
               if(combo === 1){
+                var testingVar = document.getElementById(progID).style.background = "green";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
                 var elem2 = document.getElementById("second");
@@ -51,7 +53,7 @@ function game(){
                 total = total + 1;
               }
               else if(combo === 2){
-                var testingVar = document.getElementById("pgcirc").style.background = "red";
+                var testingVar = document.getElementById(progID).style.background = "red";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'red';
                 var elem2 = document.getElementById("second");
@@ -61,12 +63,14 @@ function game(){
 
             function RightSelected(){
               if(combo === 1){
+                var testingVar = document.getElementById(progID).style.background = "red";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
                 var elem2 = document.getElementById("second");
                 elem2.style.color = 'red';
               }
               else if(combo === 2){
+                var testingVar = document.getElementById(progID).style.background = "green";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
                 var elem2 = document.getElementById("second");
@@ -74,7 +78,41 @@ function game(){
                 total = total + 1;
               }
             }
-            
+            function selectProgNum(){
+              if(problemNo == 1){
+                
+              }
+              else if(problemNo ==2){
+                
+              }
+              else if(problemNo ==3){
+                
+              }
+              else if(problemNo ==4){
+                
+              }
+              else if(problemNo ==5){
+                
+              }
+              else if(problemNo ==5){
+                
+              }
+              else if(problemNo ==6){
+                
+              }
+              else if(problemNo ==7){
+                
+              }
+              else if(problemNo ==8){
+                
+              }
+              else if(problemNo ==9){
+                
+              }
+              else if(problemNo ==){
+                
+              }
+            }
             function MakeWhite(){
                var elem1 = document.getElementById("first");
                elem1.style.color = 'white';
