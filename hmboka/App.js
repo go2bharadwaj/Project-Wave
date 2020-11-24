@@ -1,6 +1,6 @@
 var total = 0;
 var problemNo = 0;
-var tryingProg= "";
+var progID = "";
 game();
 
 
@@ -31,7 +31,10 @@ function game(){
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-            
+          
+            progID = getProgID();
+            var tryingProg = document.getElementById("first");
+            tryingProg.style.color = 'yellow';
             
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
@@ -39,7 +42,47 @@ function game(){
             //LoadAnswerCol();
            
 
-
+  function getProgID(){
+    var circNum = "";
+    if(problemNo == 1){
+      circNum = "pgc1"
+    }
+    else if(problemNo == 2){
+      
+    }
+    else if(problemNo == 3){
+      
+    }
+    else if(problemNo == 4){
+      circNum = "pgc1"
+    }
+    else if(problemNo == 5){
+      
+    }
+    else if(problemNo == 6){
+      
+    }
+        if(problemNo == 1){
+      circNum = "pgc1"
+    }
+    else if(problemNo == 2){
+      
+    }
+    else if(problemNo == 3){
+      
+    }
+    else if(problemNo == 4){
+      circNum = "pgc1"
+    }
+    else if(problemNo == 5){
+      
+    }
+    else if(problemNo == 6){
+      
+    }
+  }
+  
+  
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
