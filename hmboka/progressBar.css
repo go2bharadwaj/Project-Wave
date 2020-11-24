@@ -1,10 +1,9 @@
 .grid-container {
   display: grid;
-  height: 150px;
   width: 100%;
   align-content: space-evenly;
   grid-template-columns: auto auto auto auto auto;
-  grid-gap: none;
+  grid-gap: 10px;
   position: relative;
   background-color: #FFFFFF;
   border: 15px white;
