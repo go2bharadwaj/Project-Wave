@@ -1,20 +1,19 @@
 var total = 0;
 var problemNo = 0;
-var progID = "";
 game();
 
 
 function game(){  
               document.addEventListener("keydown", function(event) {
               if (problemNo !== gameMode) {
-                if (event.keyCode == 37) {
+                if (event.key == 'ArrowLeft') {
                   LeftSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
                   game();
                   console.log("left swipe detected");
                   console.log(problemNo);
-                } else if (event.keyCode == 39) {
+                } else if (event.key === 'ArrowRight') {
                   RightSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
@@ -26,18 +25,12 @@ function game(){
                 LoadEnd();
               }
             });
-            
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-  
-            progID = getProgID(problemNo);
-            var circleVar = document.getElementById(progID);
-            var boolMakeYellow = true;
-  
-            makeYellow();
+            
             
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
@@ -49,7 +42,6 @@ function game(){
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
-              boolMakeYellow = false;
               if(combo === 1){
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
@@ -66,7 +58,6 @@ function game(){
             }
 
             function RightSelected(){
-              boolMakeYellow = false;
               if(combo === 1){
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
@@ -80,64 +71,6 @@ function game(){
                 elem2.style.color = 'green';
                 total = total + 1;
               }
-            }
-            
-            function getProgID(problemNum){
-              var progressID = "";
-              console.log("IN SELECTPROGID");
-                  if (problemNo == 1) {
-                  progID = "pgcirctrying";
-                } 
-                else if (problemNo == 2) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 3) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 4) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 5) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 6) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 7) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 8) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 9) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 10) {
-                  progID = "pgc1";
-                }
-                else if (problemNo == 11) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 12) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 13) {
-                  progID = "pgc1";
-                } 
-                else if (problemNo == 14) {
-                  progID = "pgc1";
-                } 
-                else {
-                  progID = "pgc1";
-                }
-              return progID;
-            }
-            
-            function makeYellow(){
-                circleVar = document.getElementById(progID);
-                if (boolMakeYellow == true) {
-                  circleVar.style.background = "yellow";
-                }
             }
             
             function MakeWhite(){
