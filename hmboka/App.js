@@ -53,7 +53,7 @@ function game(){
                 LoadEnd();
               }
             });
-  console.log("problemNo = ", problemNo);
+            console.log("problemNo = ", problemNo);
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
@@ -63,7 +63,7 @@ function game(){
                   LoadOptions(correct_num,incorrect_num);
          
             progID = getProgID();
-    console.log("profID = ", progID);
+            console.log("profID = ", progID);
             var tryingProg = document.getElementById(progID);
             tryingProg.style.background = 'yellow';
             //LoadHeader();
@@ -141,6 +141,7 @@ function game(){
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
+              console.log("made it here");
               console.log("help", progID);
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
@@ -162,13 +163,14 @@ function game(){
             }
 
             function RightSelected(){
+              console.log("made it here");
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'red';
-                var elem1 = document.getElementById("first");
-                elem1.style.color = 'white';
-                var elem2 = document.getElementById("second");
-                elem2.style.color = 'red';
+                // var elem1 = document.getElementById("first");
+                // elem1.style.color = 'white';
+                // var elem2 = document.getElementById("second");
+                // elem2.style.color = 'red';
               }
               else if(combo === 2){
                 tryingProg = document.getElementById(progID);
