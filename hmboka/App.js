@@ -8,14 +8,15 @@ game();
 
 function game(){  
               document.addEventListener("keydown", function(event) {
-              if (problemNo <= gameMode) {
-                if(problemNo == gameMode)
+                
+              if (problemNo !== gameMode) {
+
                 if (event.key == 'ArrowLeft') {
                   console.log("left swipe detected");
                   
                   LeftSelected();
-                  LoadTotal(total);
                   
+                  problemNo = problemNo + 1;
                                    progID = getProgID();
                   console.log("progID = ", progID);
                   var tryingProg = document.getElementById(progID);
@@ -36,9 +37,9 @@ function game(){
                 } else if (event.key === 'ArrowRight') {
                   console.log("right swipe detected");
                   RightSelected();
-                  LoadTotal(total);
+                  //LoadTotal(total);
                   
-                  
+                  problemNo = problemNo + 1;
                                    progID = getProgID();
                   console.log("progID = ", progID);
                   var tryingProg = document.getElementById(progID);
@@ -151,23 +152,26 @@ function getProgID(){
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
               console.log("made it here");
-              problemNo = problemNo + 1;
+              
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'green';
   
                 total = total + 1;
+                
               }
               else if(combo === 2){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'red';
 
               }
+              LoadTotal(total);
+              console.log("total = ", total);
             }
 
             function RightSelected(){
               console.log("made it here");
-              problemNo = problemNo + 1;
+              //problemNo = problemNo + 1;
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'red';
@@ -184,7 +188,10 @@ function getProgID(){
                 // var elem2 = document.getElementById("second");
                 // elem2.style.color = 'green';
                 total = total + 1;
+                
               }
+              LoadTotal(total);
+              console.log("total = ", total);
             }
             
             function MakeWhite(){
