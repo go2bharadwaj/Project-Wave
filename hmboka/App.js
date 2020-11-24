@@ -31,7 +31,7 @@ function game(){
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-            
+            var makeYellow = true;
             
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
@@ -43,9 +43,10 @@ function game(){
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
-              
+              makeYellow = false;
               if(combo === 1){
-                var testingVar = document.getElementById(progID).style.background = "green";
+                var testingVar = document.getElementById(progID);
+                testingVar.style.background = "green";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
                 var elem2 = document.getElementById("second");
@@ -53,7 +54,8 @@ function game(){
                 total = total + 1;
               }
               else if(combo === 2){
-                var testingVar = document.getElementById(progID).style.background = "red";
+                var testingVar = document.getElementById(progID);
+                testingVar.style.background = "red";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'red';
                 var elem2 = document.getElementById("second");
@@ -63,14 +65,16 @@ function game(){
 
             function RightSelected(){
               if(combo === 1){
-                var testingVar = document.getElementById(progID).style.background = "red";
+                var testingVar = document.getElementById(progID);
+                testingVar.style.background = "red";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
                 var elem2 = document.getElementById("second");
                 elem2.style.color = 'red';
               }
               else if(combo === 2){
-                var testingVar = document.getElementById(progID).style.background = "green";
+                var testingVar = document.getElementById(progID)
+                testingVar.style.background = "green";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
                 var elem2 = document.getElementById("second");
@@ -80,7 +84,9 @@ function game(){
             }
             function selectProgNum(){
               if(problemNo == 1){
-                
+                if(makeYellow == true){
+                  var testingVar = document.getElementById(progID).style.background = "green";
+                }
               }
               else if(problemNo ==2){
                 
@@ -109,7 +115,22 @@ function game(){
               else if(problemNo ==9){
                 
               }
-              else if(problemNo ==){
+              else if(problemNo == 10){
+                
+              }
+              else if(problemNo == 11){
+                
+              }
+              else if(problemNo ==12){
+                
+              }
+              else if(problemNo ==13){
+                
+              }
+              else if(problemNo == 14){
+                
+              }
+              else{
                 
               }
             }
