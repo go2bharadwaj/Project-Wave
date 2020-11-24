@@ -8,7 +8,8 @@ game();
 
 function game(){  
               document.addEventListener("keydown", function(event) {
-              if (problemNo < gameMode) {
+              if (problemNo <= gameMode) {
+                if(problemNo == gameMode)
                 if (event.key == 'ArrowLeft') {
                   console.log("left swipe detected");
                   
@@ -24,7 +25,7 @@ function game(){
                   let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
                   let correct_num = LoadCorrect_num(num1,num2); //correct answer
                   let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
-                  progID = getProgID();
+                  
 
                   LoadHeader();
                   LoadOptions(correct_num,incorrect_num);
@@ -57,6 +58,7 @@ function game(){
                 }
                 
               } else {
+                LoadTotal(total);
                 LoadEnd();
               }
             });
@@ -66,8 +68,8 @@ function game(){
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-                    LoadHeader();
-                  LoadOptions(correct_num,incorrect_num);
+            LoadHeader();
+            LoadOptions(correct_num,incorrect_num);
          
             progID = getProgID();
             console.log("profID = ", progID);
