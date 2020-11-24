@@ -111,7 +111,10 @@ function game(){
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
+              console.log("help", progID);
               if(combo === 1){
+                tryingProg = document.getElementById(progID);
+                tryingProg.style.background = 'green';
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
                 var elem2 = document.getElementById("second");
@@ -119,6 +122,8 @@ function game(){
                 total = total + 1;
               }
               else if(combo === 2){
+                tryingProg = document.getElementById(progID);
+                tryingProg.style.background = 'red';
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'red';
                 var elem2 = document.getElementById("second");
@@ -128,12 +133,16 @@ function game(){
 
             function RightSelected(){
               if(combo === 1){
+                tryingProg = document.getElementById(progID);
+                tryingProg.style.background = 'red';
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
                 var elem2 = document.getElementById("second");
                 elem2.style.color = 'red';
               }
               else if(combo === 2){
+                tryingProg = document.getElementById(progID);
+                tryingProg.style.background = 'green';
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
                 var elem2 = document.getElementById("second");
