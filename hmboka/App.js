@@ -1,5 +1,6 @@
 var total = 0;
 var problemNo = 0;
+var tryingProg= "";
 game();
 
 
