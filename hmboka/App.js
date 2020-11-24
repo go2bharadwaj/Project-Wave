@@ -1,8 +1,8 @@
-console.log("gamemode = ", gameMode);
+//console.log("gamemode = ", gameMode);
 var total = 0;
-var problemNo = 1;
+var problemNo = 0;
 var progID = "";
-
+console.log("problemNo = ", problemNo);
 game();
 
 
@@ -13,6 +13,10 @@ function game(){
                   console.log("left swipe detected");
                   LeftSelected();
                   LoadTotal(total);
+                                   progID = getProgID();
+                  console.log("profID = ", progID);
+                  var tryingProg = document.getElementById(progID);
+                  tryingProg.style.background = 'yellow';
                   problemNo = problemNo + 1;
                   let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
                   let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
@@ -24,7 +28,7 @@ function game(){
                   tryingProg.style.background = 'yellow';
                   LoadHeader();
                   LoadOptions(correct_num,incorrect_num);
-                  console.log(problemNo);
+                  console.log("problemNo = ", problemNo);
                   //game();
                   
                  
@@ -32,18 +36,19 @@ function game(){
                   console.log("right swipe detected");
                   RightSelected();
                   LoadTotal(total);
+                                   progID = getProgID();
+                  console.log("profID = ", progID);
+                  var tryingProg = document.getElementById(progID);
+                  tryingProg.style.background = 'yellow';
                   problemNo = problemNo + 1;
                   let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
                   let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
                   let correct_num = LoadCorrect_num(num1,num2); //correct answer
                   let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
-                  progID = getProgID();
-                  console.log("profID = ", progID);
-                  var tryingProg = document.getElementById(progID);
-                  tryingProg.style.background = 'yellow';
+ 
                   LoadHeader();
                   LoadOptions(correct_num,incorrect_num);
-                  console.log(problemNo);
+                  console.log("problemNo = ", problemNo);
                   //game();
                   //console.log("right swipe detected");
                   //console.log(problemNo);
@@ -53,7 +58,7 @@ function game(){
                 LoadEnd();
               }
             });
-            console.log("problemNo = ", problemNo);
+            
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
@@ -111,22 +116,22 @@ function game(){
       circNum = "pgc9";
       
     }
-    else if(problemNo == 10){
+    else if(problemNo == 9){
       circNum = "pgc10";
     }
-    else if(problemNo == 11){
+    else if(problemNo == 10){
       circNum = "pgc11";
       
     }
-    else if(problemNo == 12){
+    else if(problemNo == 11){
       circNum = "pgc12";
       
     }
-    else if(problemNo == 13){
+    else if(problemNo == 12){
       circNum = "pgc13";
       
     }
-    else if(problemNo == 14){
+    else if(problemNo == 13){
       circNum = "pgc14";
     }
     else {
