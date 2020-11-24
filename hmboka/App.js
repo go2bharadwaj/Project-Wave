@@ -5,13 +5,39 @@ game();
 
 
 function game(){  
+              document.addEventListener("keydown", function(event) {
+              if (problemNo !== gameMode) {
+                if (event.keyCode == 37) {
+                  LeftSelected();
+                  LoadTotal(total);
+                  problemNo = problemNo + 1;
+                  game();
+                  console.log("left swipe detected");
+                  console.log(problemNo);
+                } else if (event.keyCode == 39) {
+                  RightSelected();
+                  LoadTotal(total);
+                  problemNo = problemNo + 1;
+                  game();
+                  console.log("right swipe detected");
+                  console.log(problemNo);
+                }
+              } else {
+                LoadEnd();
+              }
+            });
             
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-            progID = getProgID();
+  
+            progID = getProgID(problemNo);
+            var circleVar = document.getElementById(progID);
+            var boolMakeYellow = true;
+  
+            makeYellow();
             
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
@@ -53,7 +79,51 @@ function game(){
                 total = total + 1;
               }
             }
-          
+            
+            function getProgID(problemNum){
+              var progressID = "";
+              console.log("IN SELECTPROGID");
+                  if (problemNo == 1) {
+                  progressID = "pgcirctrying";
+                } else if (problemNo == 2) {
+                  progressID = "pgc1";
+                } else if (problemNo == 3) {
+                  progressID = "pgc1";
+                } else if (problemNo == 4) {
+                  progressID = "pgc1";
+                } else if (problemNo == 5) {
+                  progressID = "pgc1";
+                } else if (problemNo == 5) {
+                  progressID = "pgc1";
+                } else if (problemNo == 6) {
+                  progressID = "pgc1";
+                } else if (problemNo == 7) {
+                  progressID = "pgc1";
+                } else if (problemNo == 8) {
+                  progressID = "pgc1";
+                } else if (problemNo == 9) {
+                  progressID = "pgc1";
+                } else if (problemNo == 10) {
+                  progressID = "pgc1";
+                } else if (problemNo == 11) {
+                  progressID = "pgc1";
+                } else if (problemNo == 12) {
+                  progressID = "pgc1";
+                } else if (problemNo == 13) {
+                  progressID = "pgc1";
+                } else if (problemNo == 14) {
+                  progressID = "pgc1";
+                } else {
+                  progressID = "pgc1";
+                }
+              return progressID;
+            }
+            
+            function makeYellow(){
+                circleVar = document.getElementById(progID);
+                if (boolMakeYellow == true) {
+                  testingVar.style.background = "yellow";
+            }
             
             function MakeWhite(){
                var elem1 = document.getElementById("first");
