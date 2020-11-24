@@ -1,6 +1,7 @@
 var total = 0;
 var problemNo = 0;
 var progID = "";
+var testingVar;
 game();
 
 
@@ -32,6 +33,7 @@ function game(){
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
             var makeYellow = true;
+            selectProgNum();
             
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
@@ -45,7 +47,7 @@ function game(){
             function LeftSelected(){
               makeYellow = false;
               if(combo === 1){
-                var testingVar = document.getElementById(progID);
+                testingVar = document.getElementById(progID);
                 testingVar.style.background = "green";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
@@ -54,7 +56,7 @@ function game(){
                 total = total + 1;
               }
               else if(combo === 2){
-                var testingVar = document.getElementById(progID);
+                testingVar = document.getElementById(progID);
                 testingVar.style.background = "red";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'red';
@@ -65,7 +67,7 @@ function game(){
 
             function RightSelected(){
               if(combo === 1){
-                var testingVar = document.getElementById(progID);
+                testingVar = document.getElementById(progID);
                 testingVar.style.background = "red";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
@@ -73,7 +75,7 @@ function game(){
                 elem2.style.color = 'red';
               }
               else if(combo === 2){
-                var testingVar = document.getElementById(progID)
+                testingVar = document.getElementById(progID)
                 testingVar.style.background = "green";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'white';
@@ -82,56 +84,118 @@ function game(){
                 total = total + 1;
               }
             }
-            function selectProgNum(){
+            function selectProgID(){
               if(problemNo == 1){
-                if(makeYellow == true){
-                  var testingVar = document.getElementById(progID).style.background = "green";
-                }
+                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                // if(makeYellow == true){
+                //   testingVar.style.background = "yellow";
+                // }
               }
               else if(problemNo ==2){
-                
+                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }                
               }
               else if(problemNo ==3){
-                
+                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }                
               }
               else if(problemNo ==4){
-                
+                               progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                } 
               }
               else if(problemNo ==5){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo ==5){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo ==6){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo ==7){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo ==8){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo ==9){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo == 10){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo == 11){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo ==12){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo ==13){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else if(problemNo == 14){
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
               else{
-                
+                                progID = "pgcirctrying";
+                var testingVar = document.getElementById(progID);
+                if(makeYellow == true){
+                  testingVar.style.background = "yellow";
+                }
               }
             }
             function MakeWhite(){
