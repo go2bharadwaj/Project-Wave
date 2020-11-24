@@ -11,21 +11,21 @@ function game(){
               if (problemNo !== gameMode) {
                 if (event.key == 'ArrowLeft') {
                   console.log("left swipe detected");
+                  
                   LeftSelected();
                   LoadTotal(total);
+                  problemNo = problemNo + 1;
                                    progID = getProgID();
                   console.log("profID = ", progID);
                   var tryingProg = document.getElementById(progID);
                   tryingProg.style.background = 'yellow';
-                  problemNo = problemNo + 1;
+                  
                   let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
                   let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
                   let correct_num = LoadCorrect_num(num1,num2); //correct answer
                   let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
                   progID = getProgID();
-                  console.log("profID = ", progID);
-                  var tryingProg = document.getElementById(progID);
-                  tryingProg.style.background = 'yellow';
+
                   LoadHeader();
                   LoadOptions(correct_num,incorrect_num);
                   console.log("problemNo = ", problemNo);
@@ -36,11 +36,13 @@ function game(){
                   console.log("right swipe detected");
                   RightSelected();
                   LoadTotal(total);
+                  problemNo = problemNo + 1;
+                  if(problemNo !== (gameMode+1)){
                                    progID = getProgID();
                   console.log("profID = ", progID);
                   var tryingProg = document.getElementById(progID);
                   tryingProg.style.background = 'yellow';
-                  problemNo = problemNo + 1;
+                  }
                   let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
                   let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
                   let correct_num = LoadCorrect_num(num1,num2); //correct answer
@@ -58,7 +60,7 @@ function game(){
                 LoadEnd();
               }
             });
-            
+            console.log("in here for some reason");
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
