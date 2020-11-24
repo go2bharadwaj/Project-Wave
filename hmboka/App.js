@@ -63,7 +63,7 @@ function game(){
                 LoadEnd();
               }
             });
-            console.log("in here for some reason");
+            //console.log("in here for some reason");
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
@@ -151,7 +151,7 @@ function getProgID(){
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
-              console.log("made it here");
+              console.log("Left click: made it here and progId is", progID);
               
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
@@ -170,7 +170,7 @@ function getProgID(){
             }
 
             function RightSelected(){
-              console.log("made it here");
+              console.log("Right click: made it here and progId is", progID);
               //problemNo = problemNo + 1;
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
