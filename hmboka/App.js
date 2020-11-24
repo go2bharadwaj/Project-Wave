@@ -12,7 +12,7 @@ function game(){
               if (problemNo !== gameMode) {
 
                 if (event.key == 'ArrowLeft') {
-                  console.log("left swipe detected");
+                  //console.log("left swipe detected");
                   
                   LeftSelected();
                   
@@ -35,7 +35,7 @@ function game(){
                   
                  
                 } else if (event.key === 'ArrowRight') {
-                  console.log("right swipe detected");
+                  //console.log("right swipe detected");
                   RightSelected();
                   //LoadTotal(total);
                   
@@ -154,6 +154,7 @@ function getProgID(){
               console.log("Left click: made it here and progId is", progID);
               
               if(combo === 1){
+                progID = getProgID();
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'green';
   
