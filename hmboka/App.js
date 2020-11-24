@@ -25,6 +25,9 @@ function game(){
                   RightSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
+                  LoadHeader();
+                  LoadOptions(correct_num,incorrect_num);
+                  console.log(problemNo);
                   //game();
                   //console.log("right swipe detected");
                   //console.log(problemNo);
@@ -40,12 +43,14 @@ function game(){
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
   
-            console.log(progID);      
+         
             progID = getProgID();
-            LoadHeader();
-            LoadOptions(correct_num,incorrect_num);
+    console.log("profID = ", progID);
             var tryingProg = document.getElementById(progID);
             tryingProg.style.background = 'yellow';
+            //LoadHeader();
+            //LoadOptions(correct_num,incorrect_num);
+
             
 
             LoadTotal(total);
