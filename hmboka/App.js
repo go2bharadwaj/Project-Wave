@@ -4,7 +4,27 @@ game();
 
 
 function game(){  
-            
+                document.addEventListener("keydown", function(event) {
+    if (problemNo !== gameMode) {
+      if (event.keyCode == 37) {
+        LeftSelected();
+        LoadTotal(total);
+        problemNo = problemNo + 1;
+        game();
+        console.log("left swipe detected");
+        console.log(problemNo);
+      } else if (event.keyCode == 39) {
+        RightSelected();
+        LoadTotal(total);
+        problemNo = problemNo + 1;
+        game();
+        console.log("right swipe detected");
+        console.log(problemNo);
+      }
+    } else {
+      LoadEnd();
+    }
+  });
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
@@ -22,6 +42,7 @@ function game(){
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
+              
               if(combo === 1){
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'green';
@@ -30,6 +51,7 @@ function game(){
                 total = total + 1;
               }
               else if(combo === 2){
+                var testingVar = document.getElementById("pgcirc").style.background = "red";
                 var elem1 = document.getElementById("first");
                 elem1.style.color = 'red';
                 var elem2 = document.getElementById("second");
@@ -144,7 +166,7 @@ function game(){
                   }
                 }
               }
-
+/*
 //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
               if(problemNo !== gameMode){
@@ -187,6 +209,7 @@ function game(){
             //_________________________________________________________________________________________________________________________________________________________________
             //_________________________________________________________________________________________________________________________________________________________________________________________________
             //_________________________________________________________________________________________________________________________________________________________________________________________________
+  */
   } 
       
    

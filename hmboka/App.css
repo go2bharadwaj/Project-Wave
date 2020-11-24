@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
-#header1 { /* displays swipe instruction */
+
+#header1 {
+  /* displays swipe instruction */
   background: linear-gradient(to bottom right, #b8c6db, #f5f7fa);
   border: 15px solid white;
   color: #ffffff;
@@ -11,7 +13,8 @@
   font-size: 40px;
 }
 
-#header2 {/* displays math equation instruction */
+#header2 {
+  /* displays math equation instruction */
   background: linear-gradient(to bottom right, #FFB900, #FF7730);
   border: 15px solid white;
   color: #ffffff;
@@ -68,7 +71,7 @@
   width: 300px;
   line-height: 100px;
   height: 100px;
-  margin:0 auto;
+  margin: 0 auto;
   background: linear-gradient(to bottom right, #17f9f2, #fe0944);
   border: 7px solid orange;
   text-align: center;
