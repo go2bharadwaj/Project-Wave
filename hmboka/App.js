@@ -7,14 +7,14 @@ game();
 function game(){  
               document.addEventListener("keydown", function(event) {
               if (problemNo !== gameMode) {
-                if (event.key === 'ArrowLeft') {
+                if (event.keyCode == 37) {
                   LeftSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
                   game();
                   console.log("left swipe detected");
                   console.log(problemNo);
-                } else if (event.key === 'ArrowRight') {
+                } else if (event.keyCode == 39) {
                   RightSelected();
                   LoadTotal(total);
                   problemNo = problemNo + 1;
