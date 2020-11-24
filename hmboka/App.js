@@ -43,6 +43,7 @@ function game() {
   //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
   //______________________________________________________________________________________________________________________________________________________________________________________________
   function LeftSelected() {
+    boolMakeYellow = false;
     if (combo === 1) {
       testingVar = document.getElementById(progID);
       testingVar.style.background = "green";
@@ -88,43 +89,43 @@ function game() {
       // }
     console.log("IN SELECTPROGID");
     } else if (problemNo == 2) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 3) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 4) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 5) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 5) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 6) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 7) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 8) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 9) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 10) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 11) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 12) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 13) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else if (problemNo == 14) {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     } else {
-      progID = "pgcirctrying";
+      progID = "pgc1";
     }
   }
 
   function makeYellow() {
-    console.log("IN MAKEYELLOW");
-    console.log("IN MAKEYELLOW");
+    console.log("IN MAKEYELLOW ", boolMakeYellow);
+
     testingVar = document.getElementById(progID);
-    if (makeYellow == true) {
+    if (boolMakeYellow == true) {
       testingVar.style.background = "yellow";
     }
   }
