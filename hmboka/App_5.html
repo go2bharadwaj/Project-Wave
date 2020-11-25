@@ -64,26 +64,12 @@ el.addEventListener('submit', function(){
       </center>
     </form>
     
-<form action="GameMode.html" id="button">
-    <input type="submit" name="completeYes" value="Complete Transaction" />
+<form action="GameMode.html" id="button" onclick="return confirm('Are you sure you want to submit this form?');">
+    <input type="submit" name="completeYes" value="Complete Transaction" align="right"/>
 </form>
     
     
 
-    <form action="GameMode.html">
-      <center>
-        <!--<input type="submit" id="button" value="Click to select diffrent Game Mode" />-->
-        <input
-          type="image"
-          src="https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fhey.png?v=1605849237017"
-          height="70px"
-          width="70px"
-          align="right"
-          alt="Click to go back to Game Mode!"
-        />
 
-        <br />
-      </center>
-    </form>
   </body>
 </html>
