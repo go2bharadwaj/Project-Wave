@@ -14,10 +14,23 @@
 
     <script type="text/javascript">
       var gameMode = 5;
-      function showAlert() {
-        var myText = "Leave game";
-        alert (myText);
-      }
+      // function showAlert() {
+      //   var myText = "Leave game? (Your score will not be saved)";
+      //   alert (myText);
+      // }
+      function validate(form) {
+
+    // validation code here ...
+
+
+    if(!valid) {
+        alert('Please correct the errors in the form!');
+        return false;
+    }
+    else {
+        return confirm('Do you really want to submit the form?');
+    }
+}
     </script>
 
 <!--     <div id="dialogoverlay"></div>
@@ -89,6 +102,8 @@
         <!--<input type="submit" id="button" value="Click to select diffrent Game Mode" />-->
         <input
           type="image"
+               onsubmit="return validate(this);"
+          onclick="showAlert()"
           src="https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fhey.png?v=1605849237017"
           height="70px"
           width="70px"
