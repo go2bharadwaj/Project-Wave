@@ -14,33 +14,15 @@
 
     <script type="text/javascript">
       var gameMode = 5;
-      // function showAlert() {
-      //   var myText = "Leave game? (Your score will not be saved)";
-      //   alert (myText);
-      // }
-      function validate(form) {
+      console.log(gameMode);
+       
+      
+      var el = document.getElementById('myCoolForm');
 
-    // validation code here ...
-
-
-    if(!valid) {
-        alert('Please correct the errors in the form!');
-        return false;
-    }
-    else {
-        return confirm('Do you really want to submit the form?');
-    }
-}
+el.addEventListener('submit', function(){
+    return confirm('Are you sure you want to submit this form?');
+}, false);
     </script>
-
-<!--     <div id="dialogoverlay"></div>
-    <div id="dialogbox">
-      <div>
-        <div id="dialogboxhead"></div>
-        <div id="dialogboxbody"></div>
-        <div id="dialogboxfoot"></div>
-      </div>
-    </div> -->
 
     <div class="grid-container">
       <div id="pgc1">1</div>
@@ -49,6 +31,7 @@
       <div id="pgc4">4</div>
       <div id="pgc5">5</div>
     </div>
+
     <div id="header1"></div>
     <div id="header2"></div>
     <div id="first"></div>
@@ -67,12 +50,11 @@
     <form action="MainPage.html">
       <center>
         <br />
-        <!--<input type="submit" id="button" value="Click to go back to home!" />-->
+   
         <br /><br /><br /><br />
         <br /><br /><br /><br />
         <input
           type="image"
-          onclick="showAlert()"
           src="https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fhome.png?v=1605850041851"
           height="70px"
           width="70px"
@@ -81,14 +63,18 @@
         />
       </center>
     </form>
+    
+<form action="GameMode.html" id="button">
+    <input type="submit" name="completeYes" value="Complete Transaction" />
+</form>
+    
+    
 
-    <form  onclick="return validate(this);">
+    <form action="GameMode.html">
       <center>
         <!--<input type="submit" id="button" value="Click to select diffrent Game Mode" />-->
         <input
           type="image"
-             
-         
           src="https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fhey.png?v=1605849237017"
           height="70px"
           width="70px"
