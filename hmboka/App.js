@@ -167,7 +167,8 @@ function getProgID(){
               if(combo === 1){
                 
                 tryingProg = document.getElementById(progID);
-                tryingProg.style.background = 'green';
+                //tryingProg.style.background = 'green';
+                tryingProg.var str = "linear-gradient(" + color + "," + color2 + ")";
   
                 total = total + 1;
                 LoadTotal(total);
@@ -175,7 +176,7 @@ function getProgID(){
               }
               else if(combo === 2){
                 tryingProg = document.getElementById(progID);
-                tryingProg.style.background = 'red';
+                tryingProg.style.background = 'linear-gradient(to right, #ec3c3c 0%, #eb5656 100%);';
 
               }
               LoadTotal(total);

@@ -30,7 +30,7 @@
   position: relative;
 }
 
-
+/*
 #RedDot {
   z-index: 1;
   position: relative;
@@ -87,6 +87,7 @@
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
 }
+*/
 
 #dot {
   position: absolute;
