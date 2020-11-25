@@ -33,7 +33,7 @@ function game(){
 
                     LoadHeader();
                     LoadOptions(correct_num,incorrect_num);
-                    console.log("problemNo = ", problemNo);
+                   
                     problemNo = problemNo + 1;
                   }
                   
@@ -85,7 +85,7 @@ function game(){
             LoadOptions(correct_num,incorrect_num);
          
             progID = getProgID();
-            console.log("profID = ", progID);
+            console.log("progID = ", progID);
             var tryingProg = document.getElementById(progID);
             tryingProg.style.background = 'yellow';
 
