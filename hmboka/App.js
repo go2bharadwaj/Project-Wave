@@ -17,24 +17,27 @@ function game(){
                   LeftSelected();
                   
                   problemNo = problemNo + 1;
-                  if(problemNo >= 6){
-                    console.log("WTGGFGG");
+                  if(problemNo < 6){
+                    //console.log("WTGGFGG");
+                    //LoadEnd();
+                  
+                    progID = getProgID();
+                    console.log("progID = ", progID);
+                    var tryingProg = document.getElementById(progID);
+                    tryingProg.style.background = 'yellow';
+
+                    let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
+                    let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
+                    let correct_num = LoadCorrect_num(num1,num2); //correct answer
+                    let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
+
+
+                    LoadHeader();
+                    LoadOptions(correct_num,incorrect_num);
+                    console.log("problemNo = ", problemNo);
+                  }else{
                     LoadEnd();
                   }
-                                   progID = getProgID();
-                  console.log("progID = ", progID);
-                  var tryingProg = document.getElementById(progID);
-                  tryingProg.style.background = 'yellow';
-                  
-                  let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
-                  let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
-                  let correct_num = LoadCorrect_num(num1,num2); //correct answer
-                  let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
-                  
-
-                  LoadHeader();
-                  LoadOptions(correct_num,incorrect_num);
-                  console.log("problemNo = ", problemNo);
                   //game();
                   
                  
@@ -44,12 +47,12 @@ function game(){
                   //LoadTotal(total);
                   
                   problemNo = problemNo + 1;
-                                    if(problemNo >= 6){
-                    console.log("WTGGFGG");
-                    LoadEnd();
-                  }
-                                   progID = getProgID();
-                  console.log("progID = ", progID);
+                  if(problemNo < 6){
+                    //console.log("WTGGFGG");
+                    //LoadEnd();
+                  
+                  progID = getProgID();
+                  //console.log("progIDFUCKU = ", progID);
                   var tryingProg = document.getElementById(progID);
                   tryingProg.style.background = 'yellow';
                 
@@ -61,15 +64,15 @@ function game(){
                   LoadHeader();
                   LoadOptions(correct_num,incorrect_num);
                   console.log("problemNo = ", problemNo);
+                  }else{
+                    LoadEnd();
+                  }
                   //game();
                   //console.log("right swipe detected");
                   //console.log(problemNo);
                 }
                 
-              } else {
-                LoadTotal(total);
-                LoadEnd();
-              }
+              } 
             });
             //console.log("in here for some reason");
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
