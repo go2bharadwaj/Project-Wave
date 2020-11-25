@@ -159,6 +159,7 @@ function getProgID(){
                 tryingProg.style.background = 'green';
   
                 total = total + 1;
+                LoadTotal(total);
                 
               }
               else if(combo === 2){
@@ -190,6 +191,7 @@ function getProgID(){
                 // var elem2 = document.getElementById("second");
                 // elem2.style.color = 'green';
                 total = total + 1;
+                LoadTotal(total);
                 
               }
               LoadTotal(total);
