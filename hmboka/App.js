@@ -8,8 +8,8 @@ game();
 
 function game(){  
               document.addEventListener("keydown", function(event) {
-                
-              if (problemNo !== gameMode) {
+              
+              if (problemNo <= gameMode) {
 
                 if (event.key == 'ArrowLeft') {
                   //console.log("left swipe detected");
@@ -17,6 +17,10 @@ function game(){
                   LeftSelected();
                   
                   problemNo = problemNo + 1;
+                  if(problemNo >= 6){
+                    console.log("WTGGFGG");
+                    LoadEnd();
+                  }
                                    progID = getProgID();
                   console.log("progID = ", progID);
                   var tryingProg = document.getElementById(progID);
@@ -40,6 +44,10 @@ function game(){
                   //LoadTotal(total);
                   
                   problemNo = problemNo + 1;
+                                    if(problemNo >= 6){
+                    console.log("WTGGFGG");
+                    LoadEnd();
+                  }
                                    progID = getProgID();
                   console.log("progID = ", progID);
                   var tryingProg = document.getElementById(progID);
