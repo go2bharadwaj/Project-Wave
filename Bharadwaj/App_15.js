@@ -18,8 +18,9 @@ function game(){
             progID = getProgID();
             console.log("progID = ", progID);
             var tryingProg = document.getElementById(progID);
-            tryingProg.style.background = 'yellow';
-
+            if(progID !== 'pgc15'){
+                tryingProg.style.background = 'yellow';
+            }
             LoadTotal(total);    
 
 
@@ -212,7 +213,6 @@ function game(){
               }
               else {
                 circNum = "pgc15";
-
               }
               return circNum;
 
