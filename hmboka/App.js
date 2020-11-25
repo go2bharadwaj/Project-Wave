@@ -17,7 +17,7 @@ function game(){
                   LeftSelected();
                   
                   problemNo = problemNo + 1;
-                  if(problemNo < 6){
+                  if(problemNo < (gameMode+1)){
 
                   
                     progID = getProgID();
@@ -44,7 +44,7 @@ function game(){
 
                   
                   problemNo = problemNo + 1;
-                  if(problemNo < 6){
+                  if(problemNo < (gameMode+1)){
                     progID = getProgID();
                     //console.log("progIDFUCKU = ", progID);
                     var tryingProg = document.getElementById(progID);
