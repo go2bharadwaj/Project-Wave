@@ -7,78 +7,6 @@ game();
 
 
 function game(){  
-              /*
-              document.addEventListener("keydown", function(event) {
-              
-                
-              if (problemNo <= gameMode) {
-
-                if (event.key == 'ArrowLeft') {
-                  //console.log("left swipe detected");
-                  
-                  LeftSelected();
-                  
-                 
-                  if(problemNo < (gameMode+1)){
-
-                  
-                    progID = getProgID();
-                    console.log("progID = ", progID);
-                    var tryingProg = document.getElementById(progID);
-                    tryingProg.style.background = 'yellow';
-
-                    let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
-                    let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
-                    let correct_num = LoadCorrect_num(num1,num2); //correct answer
-                    let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
-
-
-                    LoadHeader();
-                    LoadOptions(correct_num,incorrect_num);
-                   
-                    problemNo = problemNo + 1;
-                  }
-                  
-                  else{
-                    LoadEnd();
-                  }
-                  
-                 
-                } 
-                
-                
-                
-                
-                
-                else if (event.key === 'ArrowRight') {
-                  RightSelected();
-
-                  
-                  problemNo = problemNo + 1;
-                  if(problemNo < (gameMode+1)){
-                    progID = getProgID();
-                    //console.log("progIDFUCKU = ", progID);
-                    var tryingProg = document.getElementById(progID);
-                    tryingProg.style.background = 'yellow';
-
-                    let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
-                    let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
-                    let correct_num = LoadCorrect_num(num1,num2); //correct answer
-                    let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
-
-                    LoadHeader();
-                    LoadOptions(correct_num,incorrect_num);
-                    console.log("problemNo = ", problemNo);
-                    
-                  }else{
-                    LoadEnd();
-                  }
-
-                }
-                
-              } 
-            });
-*/
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
@@ -92,9 +20,7 @@ function game(){
             var tryingProg = document.getElementById(progID);
             tryingProg.style.background = 'yellow';
 
-            LoadTotal(total);
-
-           
+            LoadTotal(total);    
 
 
   
