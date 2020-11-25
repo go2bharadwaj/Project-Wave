@@ -14,17 +14,20 @@
 
     <script type="text/javascript">
       var gameMode = 5;
-      console.log(gameMode);      
+      function showAlert() {
+        var myText = "Leave game";
+        alert (myText);
+      }
     </script>
 
-    <div id="dialogoverlay"></div>
+<!--     <div id="dialogoverlay"></div>
     <div id="dialogbox">
       <div>
         <div id="dialogboxhead"></div>
         <div id="dialogboxbody"></div>
         <div id="dialogboxfoot"></div>
       </div>
-    </div>
+    </div> -->
 
     <div class="grid-container">
       <div id="pgc1">1</div>
@@ -71,6 +74,7 @@
         <br /><br /><br /><br />
         <input
           type="image"
+          onclick="showAlert()"
           src="https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fhome.png?v=1605850041851"
           height="70px"
           width="70px"

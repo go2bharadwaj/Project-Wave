@@ -7,13 +7,6 @@ game();
 
 
 function game(){  
-  onclick="Alert.ok()">OK</button>';
-    }
-	this.ok = function(){
-		document.getElementById('dialogbox').style.display = "none";
-		document.getElementById('dialogoverlay').style.display = "none";
-	}
-}
               document.addEventListener("keydown", function(event) {
               
               if (problemNo <= gameMode) {
