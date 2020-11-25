@@ -7,8 +7,10 @@ game();
 
 
 function game(){  
+              /*
               document.addEventListener("keydown", function(event) {
               
+                
               if (problemNo <= gameMode) {
 
                 if (event.key == 'ArrowLeft') {
@@ -67,6 +69,7 @@ function game(){
                     LoadHeader();
                     LoadOptions(correct_num,incorrect_num);
                     console.log("problemNo = ", problemNo);
+                    
                   }else{
                     LoadEnd();
                   }
@@ -75,7 +78,7 @@ function game(){
                 
               } 
             });
-
+*/
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
@@ -291,7 +294,7 @@ function game(){
 
 //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
-              if(problemNo !== gameMode){
+              if(problemNo !== gameMode + 1){
                 
                     if(event.type == 'tap') {
                        console.log("tap detected");
