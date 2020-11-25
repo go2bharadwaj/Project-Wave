@@ -16,7 +16,7 @@ function game(){
                   
                   LeftSelected();
                   
-                  problemNo = problemNo + 1;
+                 
                   if(problemNo < (gameMode+1)){
 
                   
@@ -34,7 +34,10 @@ function game(){
                     LoadHeader();
                     LoadOptions(correct_num,incorrect_num);
                     console.log("problemNo = ", problemNo);
-                  }else{
+                    problemNo = problemNo + 1;
+                  }
+                  
+                  else{
                     LoadEnd();
                   }
                   
