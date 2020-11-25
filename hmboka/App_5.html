@@ -17,11 +17,11 @@
       console.log(gameMode);
        
       
-      var el = document.getElementById('myCoolForm');
+//       var el = document.getElementById('button');
 
-el.addEventListener('submit', function(){
-    return confirm('Are you sure you want to submit this form?');
-}, false);
+// el.addEventListener('submit', function(){
+//     return confirm('Are you sure you want to go back? Score will not be saved.');
+// }, false);
     </script>
 
     <div class="grid-container">
@@ -64,8 +64,14 @@ el.addEventListener('submit', function(){
       </center>
     </form>
     
-<form action="GameMode.html" id="button" onclick="return confirm('Are you sure you want to submit this form?');">
-    <input type="submit" name="completeYes" value="Complete Transaction" align="right"/>
+<form action="GameMode.html" id="button" onclick="return confirm('Are you sure you want to go back? Score will not be saved!');">
+    <input type="image" name="completeYes" value="Complete Transaction"
+       
+          src="https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Fhey.png?v=1605849237017"
+          height="70px"
+          width="70px"
+          align="right"
+          alt="Click to go back to Game Mode!"/>
 </form>
     
     
