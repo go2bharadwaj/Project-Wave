@@ -2,8 +2,16 @@
 
 
 #MainHeader { 
+  background-color: #f9f9f9;
+  background-image: linear-gradient(315deg, #f9f9f9 0%, #02a388 74%);
+  
+  /*
+  background-color: #52a7c1;
+  background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
+
   background-color: #db7f8e;
   background-image: linear-gradient(315deg, #db7f8e 0%, #7b0d1e 74%);
+  */
   border: 15px white;
   color: #ffffff;
   width: 100%
