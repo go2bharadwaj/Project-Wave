@@ -1,6 +1,5 @@
 var cars = [];
-document.getElementById("MainHeader").innerHTML = "Select Difficulty";
-document.getElementById("buttonBegin").innerHTML = "Click to Begin";
+document.getElementById("MainHeader").innerHTML = "Select Your Difficulty";
 
 
 function changeColor(newColor) {
