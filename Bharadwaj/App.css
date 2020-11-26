@@ -4,25 +4,26 @@
   background: linear-gradient(to bottom right, #b8c6db, #f5f7fa);
   border: 15px solid white;
   color: #ffffff;
-  width: 100%
+  width: 365px;
   height: 50px;
+  border-radius: 25px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  text-align:center;
+  text-align: center;
   font-size: 40px;
-  margin: 10px 10px 10px 10px;
 }
 
 #header2 {
   background: linear-gradient(to bottom right, #FFB900, #FF7730);
   border: 15px solid white;
   color: #ffffff;
-  width: 100%
+  width: 365px;
   height: 50px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align:center;
   font-size: 40px;
+  border-radius: 25px;
 }
 
 
