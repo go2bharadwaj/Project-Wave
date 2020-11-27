@@ -36,6 +36,39 @@
   height: 80px;
 }
 
+.box{
+ -webkit-animation:floating-animation 6s ease-in-out infinite;
+ -o-animation:floating-animation 6s ease-in-out infinite;
+ animation:floating-animation 6s ease-in-out infinite;
+}
+
+@keyframes floating-animation {
+  0%{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  
+  50%{
+    -webkit-transform: translateY(-20);
+    -moz-transform: translateY(-20);
+    -ms-transform: translateY(-20);
+    -o-transform: translateY(-20);
+    transform: translateY(-20);
+  }
+  
+  100%{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  
+}
+
 /*
 #RedDot {
   position: absolute;
