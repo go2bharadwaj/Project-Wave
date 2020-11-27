@@ -2,6 +2,7 @@
 var total = 0;
 var problemNo = 1;
 var progID = "";
+var num3 = 0;
 console.log("problemNo = ", problemNo);
 game();
 
@@ -35,13 +36,14 @@ function game(){
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'green';
-  
+                num3 = 0;
                 total = total + 1;
                 LoadTotal(total);
               }
               else if(combo === 2){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'red';
+                num3 = num3 + 1;
               }
               LoadTotal(total);
               console.log("total = ", total);
@@ -54,12 +56,13 @@ function game(){
               if(combo === 1){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'red';
+                num3 = num3 + 1;
 
               }
               else if(combo === 2){
                 tryingProg = document.getElementById(progID);
                 tryingProg.style.background = 'green';
-  
+                 num3 = 0;
                 total = total + 1;
                 LoadTotal(total);
                 
@@ -221,7 +224,7 @@ function game(){
 
 //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
-              if(problemNo !== gameMode + 1){
+              if(problemNo !== gameMode + 1 && (num3 !== 4)){
                 
                     if(event.type == 'tap') {
                        console.log("tap detected");
@@ -253,6 +256,17 @@ function game(){
                       //t = 0;// do something
                     } 
               }
+              
+              else if(num3 === 4){
+                document.getElementById("header2").innerHTML = "Game Over";
+                document.getElementById("first").innerHTML = "-";
+                document.getElementById("second").innerHTML = "-";
+                var elem1 = document.getElementById("first");
+                elem1.style.color = 'gold';
+                var elem2 = document.getElementById("second");
+                elem2.style.color = 'gold';
+              }
+              
               
               else{
                  LoadEnd();
