@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
 #header1 {
-  background: linear-gradient(to right, #3eb300 100%, #ff0abe 0%);
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
   border: none;
   width: 395px;
   height: 50px;
@@ -13,7 +14,8 @@
 }
 
 #Question {
-  background: linear-gradient(to bottom right, #FFB900, #FF7730);
+  background-color: #ef5734;
+  background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
   border: none;
   width: 395px;
   height: 70px;
@@ -33,7 +35,8 @@
   width: 150px;
   height: 175px;
   float: left;
-  background: radial-gradient(to right, #400080 0%, #005cad 100%);
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   border: 7px solid white;
   display: flex;
   justify-content:center;
@@ -51,7 +54,8 @@
   width: 150px;
   height: 175px;
   float: right;
-  background: radial-gradient(to right, #400080 0%, #005cad 100%);
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   border: 7px solid white;
   display: flex;
   justify-content:center;
