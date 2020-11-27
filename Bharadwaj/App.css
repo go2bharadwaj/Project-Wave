@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
 #header1 {
-  background-color: #045de9;
-  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
   border: none;
   width: 395px;
   height: 50px;
@@ -14,8 +14,8 @@
 }
 
 #Question {
-  background-color: #ef5734;
-  background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
   border: none;
   width: 395px;
   height: 70px;
@@ -72,7 +72,8 @@
   line-height: 100px;
   height: 100px;
   float: right;
-  background: linear-gradient(to right, #ffd6eb 100%, #ff0abe 0%);
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
   border: 7px solid orange;
   text-align: center;
   font-family: "Open Sans", sans-serif;
