@@ -7,8 +7,8 @@ game();
 
 
 function game(){  
-            let num1 = generateRandom(1, 10, -1);//creates number 0 to 10 for first num in equation
-            let num2 = generateRandom(1, 10, -1);//creates number 0 to 10 for second num in equation
+            let num1 = generateRandom(1, 10, -1);//creates number 0 to 5 for first num in equation
+            let num2 = generateRandom(1, 10, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 20, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
@@ -92,12 +92,12 @@ function game(){
 
             function LoadAdditionQuestion(num1,num2){
                   let question = num1 + " + " + num2 + " = "; //string for question
-                  document.getElementById("header2").innerHTML = question;
+                  document.getElementById("Question").innerHTML = question;
             }
   
             function LoadSubtractionQuestion(num1,num2){
                   let question = num1 + " - " + num2 + " = "; //string for question
-                  document.getElementById("header2").innerHTML = question;
+                  document.getElementById("Question").innerHTML = question;
             }
 
             function LoadOptions(correct_num,incorrect_num){
@@ -133,9 +133,9 @@ function game(){
             }
             
             function LoadEnd(){
-              document.getElementById("header2").innerHTML = "Total!";
-              document.getElementById("first").innerHTML = "->";
-              document.getElementById("second").innerHTML = "<-";
+              document.getElementById("Question").innerHTML = "Total!";
+              document.getElementById("first").innerHTML = "v";
+              document.getElementById("second").innerHTML = "v";
               var elem1 = document.getElementById("first");
               elem1.style.color = 'gold';
               var elem2 = document.getElementById("second");
@@ -156,6 +156,7 @@ function game(){
                   }
                 }
               }
+  
             function getProgID(){
               var circNum = "";
 
