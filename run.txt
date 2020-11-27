@@ -46,3 +46,4 @@ https://p5js.org/reference/#group-Lights,%20Camera
         
         
         
+background: linear-gradient(to right, #000f61 0%, #66007a 100%);

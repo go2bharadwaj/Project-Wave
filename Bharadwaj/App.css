@@ -3,7 +3,6 @@
 #header1 {
   background: linear-gradient(to right, #1eb300 0%, #0d740b 0%);
   border: none;
-  color: white;
   width: 395px;
   height: 50px;
   border-radius: 15px;
@@ -69,7 +68,7 @@
   line-height: 100px;
   height: 100px;
   float: right;
-  background: linear-gradient(to bottom right, #17f9f2, #fe0944);
+  background: linear-gradient(to right, #ffd6eb 100%, #ff0abe 0%);
   border: 7px solid orange;
   text-align: center;
   font-family: "Open Sans", sans-serif;
