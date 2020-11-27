@@ -18,7 +18,7 @@ function game(){
             progID = getProgID();
             console.log("progID = ", progID);
             var tryingProg = document.getElementById(progID);
-            tryingProg.style.background = 'yellow';
+            tryingProg.style.background = 'gold';
 
             LoadTotal(total);    
 

@@ -19,7 +19,7 @@ function game(){
             console.log("progID = ", progID);
             var tryingProg = document.getElementById(progID);
             if(progID !== 'pgc15'){
-                tryingProg.style.background = 'yellow';
+                tryingProg.style.background = 'gold';
             }
             LoadTotal(total);    
 

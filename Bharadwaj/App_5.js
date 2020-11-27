@@ -19,8 +19,6 @@ function game(){
             console.log("progID = ", progID);
             var tryingProg = document.getElementById(progID);
             tryingProg.style.background = 'gold';
-            var elem = document.getElementById(progID).style.border; 
-            elem = "thick solid #FFFFF"; 
 
             LoadTotal(total);    
 
