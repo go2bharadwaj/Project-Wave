@@ -12,276 +12,271 @@
 
 #pgc1 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
-  height: 50px;
-  border-radius: 15px;
   }
 
 #pgc2 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc3 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc4 {
-  line-height: 50px;
-  height: 50px;
-  width: 50px;
+ line-height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc5 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc6 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc7 {
-  line-height: 50px;
-  height: 50px;
-  width: 50px;
+ line-height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc8 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc9 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc10 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc11 {
-  line-height: 50px;
-  height: 50px;
-  width: 50px;
+ line-height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc12 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc13 {
-  line-height: 50px;
-  height: 50px;
-  width: 50px;
+ line-height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc14 {
-  line-height: 50px;
-  height: 50px;
-  width: 50px;
+ line-height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
 
 #pgc15 {
   line-height: 50px;
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: auto;
   margin-right: auto;
   }
-
-#pgcirc {
-  line-height: 50px;
-  height: 50px;
-  width: 50px;
-  background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  }
-
-#pgcirctrying {
-  line-height: 50px;
-  height: 50px;
-  width: 50px;
-  background: linear-gradient(to right, #bababa 0%, #949494 100%);
-  border-radius: 50%;
-
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  }#
 
