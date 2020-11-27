@@ -18,10 +18,10 @@ function game(){
             progID = getProgID();
             console.log("progID = ", progID);
             var tryingProg = document.getElementById(progID);
-            if(progID !== 'pgc16'){
+            
                 tryingProg.style.background = 'gold';
                 document.getElementById(progID).style.borderColor = "black";
-            }
+            
             LoadTotal(total);    
 
 
