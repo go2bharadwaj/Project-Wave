@@ -19,7 +19,7 @@ function game(){
             console.log("progID = ", progID);
             var tryingProg = document.getElementById(progID);
             tryingProg.style.background = 'gold';
-
+            document.getElementById(progID).style.borderColor = "black";
             LoadTotal(total);    
 
 
