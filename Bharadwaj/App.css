@@ -28,7 +28,7 @@
 
 #first {
   display: table-cell;
-  border-radius: 15px;
+  border-radius: 25px;
   line-height: 100px;
   width: 150px;
   height: 175px;
@@ -46,7 +46,7 @@
 }
 #second {
   display: table-cell;
-  border-radius: 15px;
+  border-radius: 25px;
   line-height: 100px;
   width: 150px;
   height: 175px;
@@ -75,7 +75,8 @@
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-  margin: 40px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
+  border-radius: 25px;
 }
 
 #button{

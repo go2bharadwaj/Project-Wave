@@ -6,7 +6,6 @@
   grid-gap: 10px;
   position: relative;
   background-color: #FFFFFF;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -25,6 +24,9 @@
   font-size: 25px;
   margin-left: auto;
   margin-right: auto;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
   }
 
 #pgc2 {
