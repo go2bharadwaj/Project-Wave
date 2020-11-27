@@ -75,7 +75,7 @@ function game(){
             
             function LoadHeader(){
               // add animation
-              document.getElementById("header1").innerHTML = "<- Wave ->";
+              document.getElementById("header1").innerHTML = " Wave ";
               var elem1 = document.getElementById("header1");
               elem1.style.color = 'black';
             }
@@ -134,8 +134,8 @@ function game(){
             
             function LoadEnd(){
               document.getElementById("Question").innerHTML = "Total!";
-              document.getElementById("first").innerHTML = "->";
-              document.getElementById("second").innerHTML = "<-";
+              document.getElementById("first").innerHTML = "v";
+              document.getElementById("second").innerHTML = "v";
               var elem1 = document.getElementById("first");
               elem1.style.color = 'gold';
               var elem2 = document.getElementById("second");
