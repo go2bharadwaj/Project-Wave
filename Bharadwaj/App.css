@@ -64,7 +64,7 @@
 }
 
 #third {
-  width: 350px;
+  width: 380px;
   line-height: 100px;
   height: 100px;
   float: right;
@@ -75,6 +75,7 @@
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
+  margin: 40px 0px 0px 0px;
 }
 
 #button{
