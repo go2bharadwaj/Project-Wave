@@ -136,7 +136,7 @@ function game(){
             function LoadEnd(){
               document.getElementById("header2").innerHTML = "Total!";
               document.getElementById("first").innerHTML = "v";
-              document.getElementById("second").innerHTML = "<-";
+              document.getElementById("second").innerHTML = "v";
               var elem1 = document.getElementById("first");
               elem1.style.color = 'gold';
               var elem2 = document.getElementById("second");
