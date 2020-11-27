@@ -45,7 +45,7 @@
 
 }
 #second {
- display: table-cell;
+  display: table-cell;
   border-radius: 15px;
   line-height: 100px;
   width: 150px;
@@ -64,11 +64,10 @@
 }
 
 #third {
-  display: table-cell;
   width: 300px;
   line-height: 100px;
   height: 100px;
-  float: center;
+  float: right;
   background: linear-gradient(to bottom right, #17f9f2, #fe0944);
   border: 7px solid orange;
   text-align: center;
@@ -76,7 +75,6 @@
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-
 }
 
 #button{
