@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
 #header1 {
-  background: linear-gradient(to right, #1eb300 0%, #0d740b 0%);
+  background: linear-gradient(to right, #3eb300 100%, #ff0abe 0%);
   border: none;
   width: 395px;
   height: 50px;
@@ -33,7 +33,7 @@
   width: 150px;
   height: 175px;
   float: left;
-  background: linear-gradient(to right, #a6aed9 100%, #eeff00 0%);
+  background: radial-gradient(to right, #400080 0%, #005cad 100%);
   border: 7px solid white;
   display: flex;
   justify-content:center;
@@ -51,7 +51,7 @@
   width: 150px;
   height: 175px;
   float: right;
-  background: linear-gradient(to right, #a6aed9 100%, #eeff00 0%);
+  background: radial-gradient(to right, #400080 0%, #005cad 100%);
   border: 7px solid white;
   display: flex;
   justify-content:center;
