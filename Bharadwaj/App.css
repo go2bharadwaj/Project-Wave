@@ -28,31 +28,37 @@
 
 #first {
   display: table-cell;
+  border-radius: 15px;
   line-height: 100px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 175px;
   float: left;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
   border: 7px solid white;
-  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 65px;
   color: #ffffff;
 
 }
 #second {
-  display: table-cell;
-  width: 100px;
+ display: table-cell;
+  border-radius: 15px;
   line-height: 100px;
-  height: 100px;
+  width: 150px;
+  height: 175px;
   float: right;
   background: linear-gradient(to bottom right, #2998FF, #5643FA);
   border: 7px solid white;
-  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 65px;
   color: #ffffff;
 
 }
