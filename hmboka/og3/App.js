@@ -1,56 +1,132 @@
+//console.log("gamemode = ", gameMode);
 var total = 0;
-var problemNo = 0;
+var problemNo = 1;
+var progID = "";
+console.log("problemNo = ", problemNo);
 game();
 
 
 function game(){  
-            
+              document.addEventListener("keydown", function(event) {
+              
+              if (problemNo <= gameMode) {
+
+                if (event.key == 'ArrowLeft') {
+                  //console.log("left swipe detected");
+                  
+                  LeftSelected();
+                  
+                  problemNo = problemNo + 1;
+                  if(problemNo < (gameMode+1)){
+
+                  
+                    progID = getProgID();
+                    console.log("progID = ", progID);
+                    var tryingProg = document.getElementById(progID);
+                    tryingProg.style.background = 'yellow';
+
+                    let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
+                    let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
+                    let correct_num = LoadCorrect_num(num1,num2); //correct answer
+                    let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
+
+
+                    LoadHeader();
+                    LoadOptions(correct_num,incorrect_num);
+                    console.log("problemNo = ", problemNo);
+                  }else{
+                    LoadEnd();
+                  }
+                  
+                 
+                } else if (event.key === 'ArrowRight') {
+                  RightSelected();
+
+                  
+                  problemNo = problemNo + 1;
+                  if(problemNo < (gameMode+1)){
+                    progID = getProgID();
+                    //console.log("progIDFUCKU = ", progID);
+                    var tryingProg = document.getElementById(progID);
+                    tryingProg.style.background = 'yellow';
+
+                    let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
+                    let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
+                    let correct_num = LoadCorrect_num(num1,num2); //correct answer
+                    let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
+
+                    LoadHeader();
+                    LoadOptions(correct_num,incorrect_num);
+                    console.log("problemNo = ", problemNo);
+                  }else{
+                    LoadEnd();
+                  }
+
+                }
+                
+              } 
+            });
+
             let num1 = generateRandom(1, 5, -1);//creates number 0 to 5 for first num in equation
             let num2 = generateRandom(1, 5, -1);//creates number 0 to 5 for second num in equation
             let correct_num = LoadCorrect_num(num1,num2); //correct answer
             let incorrect_num = generateRandom(0, 10, correct_num); //glitch not loading test tomorrow prevents correct answer twice, exclude the correct answer
             var combo = 0;
-            
-            
             LoadHeader();
             LoadOptions(correct_num,incorrect_num);
+         
+            progID = getProgID();
+            console.log("profID = ", progID);
+            var tryingProg = document.getElementById(progID);
+            tryingProg.style.background = 'yellow';
+
             LoadTotal(total);
-            //LoadAnswerCol();
+
            
 
 
+  
+  
 //Helper Functions_______________________________________________________________________________________________________________________________________________________________________________
 //______________________________________________________________________________________________________________________________________________________________________________________________
             function LeftSelected(){
+              console.log("Left click: made it here and progId is", progID);
+              progID = getProgID();
               if(combo === 1){
-                var elem1 = document.getElementById("first");
-                elem1.style.color = 'green';
-                var elem2 = document.getElementById("second");
-                elem2.style.color = 'white';
+                
+                tryingProg = document.getElementById(progID);
+                tryingProg.style.background = 'green';
+  
                 total = total + 1;
+                LoadTotal(total);
               }
               else if(combo === 2){
-                var elem1 = document.getElementById("first");
-                elem1.style.color = 'red';
-                var elem2 = document.getElementById("second");
-                elem2.style.color = 'white';
+                tryingProg = document.getElementById(progID);
+                tryingProg.style.background = 'red';
               }
+              LoadTotal(total);
+              console.log("total = ", total);
             }
 
             function RightSelected(){
+              console.log("Right click: made it here and progId is", progID);
+              progID = getProgID();
+
               if(combo === 1){
-                var elem1 = document.getElementById("first");
-                elem1.style.color = 'white';
-                var elem2 = document.getElementById("second");
-                elem2.style.color = 'red';
+                tryingProg = document.getElementById(progID);
+                tryingProg.style.background = 'red';
+
               }
               else if(combo === 2){
-                var elem1 = document.getElementById("first");
-                elem1.style.color = 'white';
-                var elem2 = document.getElementById("second");
-                elem2.style.color = 'green';
+                tryingProg = document.getElementById(progID);
+                tryingProg.style.background = 'green';
+  
                 total = total + 1;
+                LoadTotal(total);
+                
               }
+              LoadTotal(total);
+              console.log("total = ", total);
             }
             
             function MakeWhite(){
@@ -62,7 +138,7 @@ function game(){
             
             function LoadHeader(){
               // add animation
-              document.getElementById("header1").innerHTML = "<- Wave ->";
+              document.getElementById("header1").innerHTML = "<- Swipe ->";
               var elem1 = document.getElementById("header1");
               elem1.style.color = 'black';
             }
@@ -143,6 +219,67 @@ function game(){
                   }
                 }
               }
+            function getProgID(){
+              var circNum = "";
+
+              if(problemNo == 1){
+                circNum = "pgc1";
+              }
+              else if(problemNo == 2){
+                circNum = "pgc2";
+
+              }
+              else if(problemNo == 3){
+                circNum = "pgc3";
+
+              }
+              else if(problemNo == 4){
+                circNum = "pgc4";
+              }
+              else if(problemNo == 5){
+                circNum = "pgc5";
+
+              }
+              else if(problemNo == 6){
+                circNum = "pgc6";
+
+              }
+              else if(problemNo == 7){
+                circNum = "pgc7";
+              }
+              else if(problemNo == 8){
+                circNum = "pgc8";
+
+              }
+              else if(problemNo == 9){
+                circNum = "pgc9";
+
+              }
+              else if(problemNo == 10){
+                circNum = "pgc10";
+              }
+              else if(problemNo == 11){
+                circNum = "pgc11";
+
+              }
+              else if(problemNo == 12){
+                circNum = "pgc12";
+
+              }
+              else if(problemNo == 13){
+                circNum = "pgc13";
+
+              }
+              else if(problemNo == 14){
+                circNum = "pgc14";
+              }
+              else {
+                circNum = "pgc15";
+
+              }
+              return circNum;
+
+            }
 
 //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
