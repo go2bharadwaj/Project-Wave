@@ -87,7 +87,7 @@ function game(){
             }
 
             function LoadTotal(total){ 
-                  document.getElementById("third").innerHTML = total;
+                  document.getElementById("third").innerHTML = "Score: " + total;
             }
 
             function LoadAdditionQuestion(num1,num2){
