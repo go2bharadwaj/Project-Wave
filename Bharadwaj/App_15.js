@@ -237,7 +237,7 @@ function game(){
 
 //SOLI___________________________________________________________________________________________________________________________________________________________
             window.onSoliEvent = function(event) { // this function will run any time a gesture is detected'
-              if(problemNo !== gameMode + 1 && ){
+              if(problemNo !== gameMode + 1){
                 
                     if(event.type == 'tap') {
                        console.log("tap detected");
