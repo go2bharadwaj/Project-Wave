@@ -6,11 +6,11 @@
   border: none;
   width: 395px;
   height: 50px;
-  border-radius: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 40px;
+  border-radius: 5px;
 }
 
 #Question {
