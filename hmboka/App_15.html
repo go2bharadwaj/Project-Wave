@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="App.css" /> <!--import css-->
+    <link rel="stylesheet" href="ProgressBar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--this formats boxes to any device screen size-->
+    <style>
+    html{
+      background:url('https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2FWave_icon_2.png?v=1606621037652') no-repeat center center fixed;
+      -webkit-background-size:400px;
+      -moz-background-size: 400px;
+      -o-background-size:400px;
+      background-size: 400px;
+      width: 410px;
+    }
+    
+    body{
+        color :#FFFFFF;
+    }
+      
+  </style> 
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> <!--p5js version 1-->
+    <script type="text/javascript">
+    var gameMode = 15;
+    </script>
+    
+    
+    <div id="header1"></div>
+    <br> <br> 
+    <div id="Question" class="floating" style= 
+           "background: linear-gradient(to bottom right, #FFB900, #FF7730);
+            border: none;
+            width: 395px;
+            height: 70px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 60px;
+            border-radius: 15px;" value="Click to Begin!"></div>
+    
+    
+    <br> <br> 
+    
+    <div id="first"></div>
+    <div id="second"></div>
+    
+    <br> <br> <br> <br>
+    <br> <br> <br> <br> 
+    <div id="third"></div>
+    
+    
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br>
+
+    
+    
+    
+    <div class="grid-container">
+    <div id="pgc1">1</div>
+    <div id="pgc2">2</div>
+    <div id="pgc3">3</div>
+    <div id="pgc4">4</div>
+    <div id="pgc5">5</div>
+    <div id="pgc6">6</div>
+    <div id="pgc7">7</div>
+    <div id="pgc8">8</div>
+    <div id="pgc9">9</div>
+    <div id="pgc10">10</div>
+    <div id="pgc11">11</div>
+    <div id="pgc12">12</div>
+    <div id="pgc13">13</div>
+    <div id="pgc14">14</div>
+    <div id="pgc15">15</div>      
+    </div>
+
+    
+    <br>
+    
+    <script src="App_15.js" type="text/javascript"></script>
+    
+    
+    <form action="App_15.html" onclick="return confirm('Are you sure you want to restart? Score will not be saved!');">
+    <input type="image" name="completeYes" value="Complete Transaction"
+          src="https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Frestart.png?v=1606453388320"
+          height="67px" 
+          width="67px" 
+          align="right" 
+          alt="Click to Restart"/>
+   </form>
+    
+    <form action="GameMode.html" onclick="return confirm('Are you sure you want to go back? Progress will not be saved!');">
+    <input type="image" name="completeYes" value="Complete Transaction"
+          src="https://cdn.glitch.com/b88892c3-13db-4b8f-be60-64c47e8b9052%2Farrow.png?v=1606453559583"
+          height="67px"
+          width="67px"
+          align="left"
+          alt="Click to change Difficulty!"/>
+   </form>
+    
+  </body>
+</html>
