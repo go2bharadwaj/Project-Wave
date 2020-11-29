@@ -2,7 +2,33 @@
 
 #header1 {
   background-color: #a4508b;
-  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-image: linear-gradient(to left, #60dfcd 0%, #1e9afe 74%);
+  border: 3px black;
+  width: 395px;
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 5px;
+}
+
+#header11 {
+  background-color: #a4508b;
+  background: linear-gradient(to right, #ffb30f 41%, #fff242 100%);
+  border: none;
+  width: 395px;
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 5px;
+}
+
+#header111 {
+  background-color: #a4508b;
+  background: linear-gradient(to right, #f22121 41%, #ffd561 100%);
   border: none;
   width: 395px;
   height: 50px;
